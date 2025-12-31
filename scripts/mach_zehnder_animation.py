@@ -250,6 +250,291 @@ class MachZehnderOptical(Scene):
         self.wait(2)
 
 
+class MachZehnderAtomic(Scene):
+    """原子干渉計（時空間ダイアグラム）- MachZehnderOpticalに対応
+
+    縦軸: 時間（上から下へ、重力方向と一致）
+    横軸: 運動量/位置
+    パルスは横線として配置、経路は平行四辺形
+    """
+
+    def construct(self):
+        title = Text("原子干渉計（マッハ-ツェンダー型）", font_size=36).to_edge(UP)
+        self.play(Write(title))
+
+        # 座標軸の設定
+        # 縦軸: 時間（上から下へ進行）、横軸: 運動量/位置
+        center = ORIGIN + DOWN * 0.3
+
+        # 時間軸（縦、下向き）
+        time_axis = Arrow(
+            center + UP * 2.5 + LEFT * 4,
+            center + DOWN * 2.8 + LEFT * 4,
+            color=WHITE, buff=0, stroke_width=2
+        )
+        time_label = Text("時間 t", font_size=20).next_to(time_axis, DOWN, buff=0.1)
+
+        # 運動量/位置軸（横）
+        momentum_axis = Arrow(
+            center + UP * 2.5 + LEFT * 4.3,
+            center + UP * 2.5 + RIGHT * 4,
+            color=WHITE, buff=0, stroke_width=2
+        )
+        momentum_label = Text("運動量 p", font_size=20).next_to(momentum_axis, RIGHT, buff=0.1)
+
+        # 重力の矢印（右側に配置、時間軸と平行で下向き）
+        gravity_arrow = Arrow(
+            RIGHT * 4.5 + UP * 1.5,
+            RIGHT * 4.5 + DOWN * 0.5,
+            color=ORANGE, buff=0, stroke_width=4
+        )
+        gravity_label = MathTex(r"\vec{g}", font_size=28, color=ORANGE)
+        gravity_label.next_to(gravity_arrow, RIGHT, buff=0.15)
+
+        self.play(
+            GrowArrow(time_axis), Write(time_label),
+            GrowArrow(momentum_axis), Write(momentum_label),
+        )
+        self.play(GrowArrow(gravity_arrow), Write(gravity_label))
+        self.wait(0.3)
+
+        # パルス位置（時刻 t=0, T, 2T）- 横線として配置
+        # 時間間隔
+        t_spacing = 1.5
+
+        # パルスマーカー（横線）
+        pulse1 = DashedLine(
+            LEFT * 2.5 + UP * 1.5 + center,
+            RIGHT * 2.5 + UP * 1.5 + center,
+            color=PURPLE, stroke_width=3, dash_length=0.15
+        )
+        pulse1_label = MathTex(r"\pi/2", font_size=26, color=PURPLE)
+        pulse1_label.next_to(pulse1, LEFT, buff=0.2)
+        t0_label = Text("t=0", font_size=18).next_to(pulse1, RIGHT, buff=0.3)
+
+        pulse2 = DashedLine(
+            LEFT * 2.5 + center,
+            RIGHT * 2.5 + center,
+            color=PURPLE, stroke_width=3, dash_length=0.15
+        )
+        pulse2_label = MathTex(r"\pi", font_size=26, color=PURPLE)
+        pulse2_label.next_to(pulse2, LEFT, buff=0.2)
+        tT_label = Text("t=T", font_size=18).next_to(pulse2, RIGHT, buff=0.3)
+
+        pulse3 = DashedLine(
+            LEFT * 2.5 + DOWN * 1.5 + center,
+            RIGHT * 2.5 + DOWN * 1.5 + center,
+            color=PURPLE, stroke_width=3, dash_length=0.15
+        )
+        pulse3_label = MathTex(r"\pi/2", font_size=26, color=PURPLE)
+        pulse3_label.next_to(pulse3, LEFT, buff=0.2)
+        t2T_label = Text("t=2T", font_size=18).next_to(pulse3, RIGHT, buff=0.3)
+
+        # パルスを表示
+        self.play(
+            Create(pulse1), Write(pulse1_label), Write(t0_label),
+        )
+        self.play(
+            Create(pulse2), Write(pulse2_label), Write(tT_label),
+        )
+        self.play(
+            Create(pulse3), Write(pulse3_label), Write(t2T_label),
+        )
+        self.wait(0.5)
+
+        # 原子の軌跡（正しい物理的経路）
+        #
+        #     ●                  ← 原子（パルス前、|g⟩状態で落下）
+        #     |
+        # ────●────              ← t=0: π/2パルスで分割
+        #     |\
+        #     | \                ← |g⟩(青)真下、|e⟩(赤)斜め右下
+        # ────●──●──             ← t=T: πパルスで状態反転
+        #      \ |
+        #       \|               ← |g⟩→|e⟩(赤)斜め右下、|e⟩→|g⟩(青)真下
+        # ────────●──            ← t=2T: π/2パルスで再結合
+        #        /|
+        #       / |              ← 干渉結果: |e⟩斜め、|g⟩真下
+
+        # 頂点位置
+        horizontal_spread = 1.2  # 横方向の広がり（運動量+ħkによる偏向）
+
+        # パルス前の原子位置（t<0）
+        pre_pulse_point = center + UP * 2.3
+        # t=0 での分割点（π/2パルス位置）
+        t0_point = center + UP * t_spacing
+        # t=T での2つの位置（πパルス位置）
+        tT_g = center  # |g⟩経路: 真下に落ちた位置
+        tT_e = center + RIGHT * horizontal_spread  # |e⟩経路: 斜め右に移動した位置
+        # t=2T での再結合点（π/2パルス位置）
+        t2T_point = center + DOWN * t_spacing + RIGHT * horizontal_spread
+        # 出力位置
+        output_g = t2T_point + DOWN * 0.8  # |g⟩出力: 真下
+        output_e = t2T_point + DOWN * 0.8 + RIGHT * horizontal_spread  # |e⟩出力: 斜め右
+
+        # パルス前の原子を表示
+        atom_dot = Dot(pre_pulse_point, color=WHITE, radius=0.1)
+        atom_label = MathTex(r"|g\rangle", font_size=22, color=BLUE)
+        atom_label.next_to(atom_dot, LEFT, buff=0.15)
+        self.play(FadeIn(atom_dot), Write(atom_label))
+
+        # パルス前の落下経路
+        pre_path = Arrow(
+            pre_pulse_point, t0_point,
+            color=BLUE, buff=0, stroke_width=3
+        )
+        self.play(
+            FadeOut(atom_dot), FadeOut(atom_label),
+            GrowArrow(pre_path),
+        )
+        self.wait(0.3)
+
+        # ステップ1: 分割
+        step1_text = Text("① 分割（π/2パルス）", font_size=26, color=YELLOW)
+        step1_text.to_corner(UL).shift(DOWN * 0.8 + RIGHT * 0.2)
+        self.play(Write(step1_text))
+
+        # 経路A（|e⟩状態、赤）: 運動量+ħk_effを獲得 → 斜め右下へ
+        path_a1 = Arrow(
+            t0_point, tT_e,
+            color=RED, buff=0, stroke_width=3
+        )
+        path_a_state1 = MathTex(r"|e\rangle", font_size=20, color=RED)
+        path_a_state1.next_to(path_a1.get_center(), RIGHT, buff=0.1)
+
+        # 経路B（|g⟩状態、青）: 運動量変化なし → 真下へ
+        path_b1 = Arrow(
+            t0_point, tT_g,
+            color=BLUE, buff=0, stroke_width=3
+        )
+        path_b_state1 = MathTex(r"|g\rangle", font_size=20, color=BLUE)
+        path_b_state1.next_to(path_b1.get_center(), LEFT, buff=0.1)
+
+        self.play(
+            GrowArrow(path_a1), Write(path_a_state1),
+            GrowArrow(path_b1), Write(path_b_state1),
+        )
+        self.wait(0.5)
+
+        # ステップ2: 反転
+        step2_text = Text("② 反転（πパルス）", font_size=26, color=YELLOW)
+        step2_text.next_to(step1_text, DOWN, aligned_edge=LEFT)
+        self.play(Write(step2_text))
+
+        # πパルスで状態と運動量が反転
+        # 経路A続き: |e⟩→|g⟩、運動量0に → 真下へ
+        path_a2 = Arrow(
+            tT_e, t2T_point,
+            color=BLUE, buff=0, stroke_width=3
+        )
+        path_a_state2 = MathTex(r"|g\rangle", font_size=20, color=BLUE)
+        path_a_state2.next_to(path_a2.get_center(), RIGHT, buff=0.1)
+
+        # 経路B続き: |g⟩→|e⟩、運動量+ħkを獲得 → 斜め右下へ
+        path_b2 = Arrow(
+            tT_g, t2T_point,
+            color=RED, buff=0, stroke_width=3
+        )
+        path_b_state2 = MathTex(r"|e\rangle", font_size=20, color=RED)
+        path_b_state2.next_to(path_b2.get_center(), LEFT, buff=0.1)
+
+        self.play(
+            GrowArrow(path_a2), Write(path_a_state2),
+            GrowArrow(path_b2), Write(path_b_state2),
+        )
+        self.wait(0.5)
+
+        # ステップ3: 再結合
+        step3_text = Text("③ 再結合（π/2パルス）", font_size=26, color=YELLOW)
+        step3_text.next_to(step2_text, DOWN, aligned_edge=LEFT)
+        self.play(Write(step3_text))
+
+        # 再結合点を強調
+        recombine_dot = Dot(t2T_point, color=GREEN, radius=0.12)
+        recombine_label = Text("干渉", font_size=18, color=GREEN)
+        recombine_label.next_to(recombine_dot, RIGHT, buff=0.15)
+
+        self.play(FadeIn(recombine_dot), Write(recombine_label))
+        self.wait(0.3)
+
+        # 出力経路（干渉結果）
+        # 出力1: |g⟩成分 → 真下
+        output_path1 = Arrow(
+            t2T_point, output_g,
+            color=BLUE, buff=0, stroke_width=3
+        )
+        output_label1 = MathTex(r"|g\rangle", font_size=18, color=BLUE)
+        output_label1.next_to(output_path1.get_end(), DOWN, buff=0.1)
+
+        # 出力2: |e⟩成分 → 斜め右下
+        output_path2 = Arrow(
+            t2T_point, output_e,
+            color=RED, buff=0, stroke_width=3
+        )
+        output_label2 = MathTex(r"|e\rangle", font_size=18, color=RED)
+        output_label2.next_to(output_path2.get_end(), DOWN, buff=0.1)
+
+        self.play(
+            GrowArrow(output_path1), Write(output_label1),
+            GrowArrow(output_path2), Write(output_label2),
+        )
+        self.wait(0.5)
+
+        # 凡例
+        legend = VGroup(
+            VGroup(
+                Line(ORIGIN, RIGHT * 0.5, color=RED, stroke_width=3),
+                MathTex(r"|e\rangle", font_size=22, color=RED),
+                Text("運動量 +ħk", font_size=16, color=RED),
+            ).arrange(RIGHT, buff=0.15),
+            VGroup(
+                Line(ORIGIN, RIGHT * 0.5, color=BLUE, stroke_width=3),
+                MathTex(r"|g\rangle", font_size=22, color=BLUE),
+                Text("運動量 0", font_size=16, color=BLUE),
+            ).arrange(RIGHT, buff=0.15),
+        ).arrange(DOWN, aligned_edge=LEFT, buff=0.15)
+        legend.to_corner(DR).shift(UP * 0.5 + LEFT * 0.3)
+
+        self.play(Write(legend))
+        self.wait(1)
+
+        # ステップ表示をフェードアウト
+        self.play(
+            FadeOut(step1_text), FadeOut(step2_text), FadeOut(step3_text)
+        )
+        self.wait(0.3)
+
+        # 干渉計全体をフェードアウト
+        interferometer_elements = VGroup(
+            time_axis, time_label, momentum_axis, momentum_label,
+            gravity_arrow, gravity_label,
+            pulse1, pulse1_label, t0_label,
+            pulse2, pulse2_label, tT_label,
+            pulse3, pulse3_label, t2T_label,
+            pre_path,
+            path_a1, path_a_state1, path_a2, path_a_state2,
+            path_b1, path_b_state1, path_b2, path_b_state2,
+            recombine_dot, recombine_label,
+            output_path1, output_label1, output_path2, output_label2,
+            legend,
+        )
+        self.play(FadeOut(interferometer_elements))
+        self.wait(0.3)
+
+        # 干渉の説明（中央に大きく表示）
+        explanation = VGroup(
+            Text("加速度 a により2経路間に位相差が蓄積", font_size=28),
+            MathTex(r"\Delta\phi = k_{\text{eff}} \cdot a \cdot T^2", font_size=44, color=YELLOW),
+            MathTex(r"\Downarrow", font_size=36),
+            Text("確率として観測", font_size=26),
+            MathTex(r"P_g = \cos^2\left(\frac{\Delta\phi}{2}\right)", font_size=40, color=GREEN),
+        ).arrange(DOWN, buff=0.4)
+        explanation.move_to(ORIGIN)
+
+        self.play(Write(explanation), run_time=2)
+        self.wait(2)
+
+
 class OpticalMachZehnder(Scene):
     """光学的マッハ-ツェンダー干渉計"""
 

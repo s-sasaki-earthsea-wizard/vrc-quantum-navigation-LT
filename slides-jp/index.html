@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>量子航法で超高精度な位置測定　〜冷えた原子がGPSを置き換える？〜</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/sky.css">
+  <link rel="stylesheet" href="styles/custom-style.css">
+
+  <!-- Add KaTeX CSS and JS -->
+  <link rel="stylesheet" href="plugin/math/katex.min.css">
+  <script src="plugin/math/katex.js"></script>
+  <script src="plugin/math/math.js"></script>
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown data-separator="---">
+        <textarea data-template>
+
+### 量子航法で超高精度な位置測定
+#### 冷えた原子がGPSを置き換える？
+
+<img src="assets/images/title.png" height="400px">
+
+---
+
+### 自己紹介
+
+<div class="profile-container">
+<div class="profile-left">
+
+* さめ(мег-сск)
+  * ⚛️ VRChat物理学集会の主催
+  * 🧑‍🎓 社会人学生として通信制大学在学中
+* 得意分野:
+	* 📸 コンピュータビジョン (画像認識/点群処理)
+	* 🌍 空間情報処理 (地理情報/リモートセンシング)
+	* ☁️ クラウドインフラ設計/IaC (AWS, GCP)
+* [GitHub](https://github.com/s-sasaki-earthsea-wizard)
+* [YouTube](https://www.youtube.com/@SyotaSasaki-EW)
+* [Speaker Deck](https://speakerdeck.com/syotasasaki593876)
+
+</div>
+
+<div class="profile-right">
+
+<img src="assets/images/icon_circle.png" alt="avatar" height="350px" width="350px">
+
+</div>
+</div>
+
+---
+
+### 今日話すこと
+
+<div class="simple-box">
+
+* 慣性航法の基礎と課題（誤差蓄積問題）
+* 冷却原子を使う理由（コヒーレンス）
+* 原子干渉計の原理（ラマン遷移）
+* 量子センサーの優位性
+* 実用化の動向（2025年）
+
+</div>
+
+<br>
+
+<div class="highlight-box">
+
+
+
+</div>
+
+---
+
+## 慣性航法
+
+---
+
+### 移動距離 = 速さ × 時間
+
+<div class="simple-box">
+
+* 等速運動の場合: $x = vt$
+* 🚢ボートから🪢結び目(knot)付きのロープを投げて砂時計の砂が落ちるまでの時間にいくつの結び目が落ちたかを数える
+  * 最も単純な慣性航法、速度の単位ノットの由来
+
+</div>
+
+---
+
+### VTグラフと移動距離
+
+<div class="two-column">
+<div class="column-left">
+
+* 速度-時間グラフの**面積** = 移動距離
+* 速度が変化しても、細かく分割して足し合わせればOK
+* これが**積分**の考え方
+
+</div>
+<div class="column-right">
+
+$$x(t) = \int_0^t v(\tau)  d\tau$$
+
+</div>
+</div>
+
+---
+
+### 慣性航法の原理
+
+<div class="simple-box">
+
+* 加速度を**二重積分**して位置を求める
+  * $a \xrightarrow{\int} v \xrightarrow{\int} x$
+* なぜ速度を直接測らない？
+  * 飛行機の中で速度を感じるのは離着陸の時だけ
+  * 等速運動中は外を見ないと自分の速度がわからない
+  * 速度測定には**外部基準**が必要 → 慣性航法は**自己完結型**
+
+</div>
+
+---
+
+### 誤差蓄積問題
+
+<div class="highlight-box">
+
+* 加速度のわずかな誤差 $\delta a$ が位置誤差 $\delta x$ に拡大
+* 二重積分なので誤差は時間の二乗に比例
+
+$$\delta x \sim \frac{1}{2} \delta a \cdot t^2$$
+
+</div>
+
+<br>
+
+<div class="simple-box">
+
+* 例: $\delta a = 10^{-5}$ m/s² の誤差
+  * 1時間後 → 約65m のずれ
+  * 10時間後 → 約6.5km のずれ
+
+</div>
+
+---
+
+## 冷却原子の波動性
+
+---
+
+### なぜ冷却原子？
+
+<div class="simple-box">
+
+* 原子干渉計で加速度を超高精度に測定するため
+* 冷却すると原子の**波としての性質**が際立つ
+* 波の干渉を使って加速度を測る → 波長が揃っていないとダメ
+
+</div>
+
+---
+
+### 原子の波動性（ド・ブロイ波）
+
+<div class="highlight-box">
+
+すべての物質は波としての性質を持つ
+
+$$\lambda_{\text{dB}} = \frac{h}{mv}$$
+
+</div>
+
+<br>
+
+<div class="simple-box">
+
+* $h$: プランク定数、$m$: 質量、$v$: 速度
+* 速度が**ばらつく**と波長も**ばらつく** → 干渉縞がぼやける
+* 冷却して速度分布を狭くする → 波長が揃う → コヒーレンス向上
+
+</div>
+
+---
+
+### 温度と速度分布
+
+<div class="simple-box">
+
+* 熱い原子：様々な速度でバラバラに動く（Maxwell-Boltzmann分布）
+* 冷たい原子：速度分布が狭くなり、波長が揃う
+* 熱的ド・ブロイ波長: $\lambda_{\text{th}} \sim \frac{h}{\sqrt{m k_B T}}$
+
+</div>
+
+<br>
+
+<div class="highlight-box">
+
+温度 $T$ が低いほど波長が長くなり、量子効果が顕著に
+
+</div>
+
+---
+
+### 実用的な冷却レベル
+
+<div class="simple-box">
+
+* **レーザー冷却（数μK）**: 現在の原子干渉計はこのレベル
+  * 速度分布が十分狭く、実用的なコヒーレンス時間
+  * 装置が比較的シンプル
+* **ボース=アインシュタイン凝縮（数百nK以下）**: 研究段階
+  * 究極のコヒーレンスだが装置が複雑
+
+</div>
+
+---
+
+### LT登壇者の募集
+
+<div class="simple-box">
+
+* 物理学集会ではLT登壇者を募集しています！
+  * どんなジャンルでもOK！
+* 興味のある方は物理学集会のDiscordサーバーまで！
+
+</div>
+
+<img src="assets/images/qrcode.png" width="200px">
+
+					</textarea>
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+    });
+  </script>
+</body>
+
+</html>

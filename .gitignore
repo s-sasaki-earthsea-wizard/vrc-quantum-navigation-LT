@@ -12,3 +12,6 @@ media
 
 # Python cache
 __pycache__/
+
+# Documents
+docs

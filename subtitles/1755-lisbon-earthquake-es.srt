@@ -1,0 +1,595 @@
+1
+00:00:04,666 --> 00:00:11,166
+¿Saben cuándo los desastres se convirtieron por primera vez en objeto de estudio científico?
+
+2
+00:00:12,033 --> 00:00:19,466
+Un punto de inflexión importante fue el Gran Terremoto de Lisboa del 1 de noviembre de 1755
+
+3
+00:00:20,466 --> 00:00:27,933
+Hace unos 270 años, en Europa se creía que los terremotos eran la ira de Dios
+
+4
+00:00:28,700 --> 00:00:34,533
+El Gran Terremoto de Lisboa se convirtió en un importante catalizador para cambiar esa creencia
+
+5
+00:00:35,266 --> 00:00:39,733
+No solo hizo de los terremotos un objeto de estudio científico
+
+6
+00:00:40,400 --> 00:00:45,500
+sino que también transformó fundamentalmente la forma en que se realizaba la investigación científica
+
+7
+00:00:46,600 --> 00:00:50,400
+Hoy, vamos a trazar cómo los desastres, que se creían ira divina
+
+8
+00:00:50,833 --> 00:00:54,900
+se convirtieron en objetos de investigación científica
+
+9
+00:00:55,500 --> 00:00:57,966
+y explorar este viaje histórico
+
+10
+00:01:01,066 --> 00:01:05,900
+Primero, veamos la magnitud del Gran Terremoto de Lisboa
+
+11
+00:01:06,666 --> 00:01:13,733
+Ocurrió el 1 de noviembre de 1755, alrededor de las 9:40 de la mañana
+
+12
+00:01:14,733 --> 00:01:20,000
+El epicentro estaba a unos 220 km del Cabo de San Vicente en el Océano Atlántico
+
+13
+00:01:21,433 --> 00:01:25,100
+La magnitud estimada fue entre 8,5 y 9
+
+14
+00:01:26,333 --> 00:01:31,566
+Similar o incluso mayor que el Gran Terremoto del Este de Japón de 2011
+
+15
+00:01:32,533 --> 00:01:37,966
+Este terremoto destruyó aproximadamente el 85% de los edificios de Lisboa
+
+16
+00:01:37,966 --> 00:01:42,600
+y se estima que el número de muertos alcanzó entre 30.000 y 40.000 personas
+
+17
+00:01:43,433 --> 00:01:47,100
+Lo que fue particularmente aterrador fue el triple desastre
+
+18
+00:01:47,866 --> 00:01:52,066
+Primero, el derrumbe de edificios por tres grandes sacudidas
+
+19
+00:01:52,833 --> 00:01:57,433
+Luego, un enorme tsunami que golpeó después de que el mar se retirara
+
+20
+00:01:58,500 --> 00:02:03,366
+Y después, incendios que estallaron por toda la ciudad debido a utensilios de cocina volcados
+
+21
+00:02:04,666 --> 00:02:09,100
+Los grabados en cobre de la época muestran la escala devastadora de la destrucción
+
+22
+00:02:10,500 --> 00:02:16,466
+Además, el tsunami llegó hasta las Azores y las Indias Occidentales
+
+23
+00:02:17,033 --> 00:02:20,000
+y se observaron temblores en toda Europa
+
+24
+00:02:20,600 --> 00:02:26,600
+Fue un desastre generalizado que causó daños masivos en toda Europa y el Atlántico
+
+25
+00:02:27,466 --> 00:02:33,400
+Entonces, ¿por qué este terremoto se convirtió en un punto de inflexión tan especial en la historia de la ciencia?
+
+26
+00:02:34,733 --> 00:02:39,800
+Está profundamente relacionado con el momento y el lugar de este terremoto
+
+27
+00:02:40,866 --> 00:02:46,866
+El 1 de noviembre era el Día de Todos los Santos, una fiesta católica importante
+
+28
+00:02:48,066 --> 00:02:51,866
+Los ciudadanos devotos asistían a misa en las iglesias
+
+29
+00:02:52,433 --> 00:02:55,000
+cuando el terremoto golpeó en ese preciso momento
+
+30
+00:02:56,233 --> 00:03:00,700
+Mientras las iglesias se derrumbaban y muchos fieles perecían
+
+31
+00:03:01,200 --> 00:03:06,033
+los burdeles y establecimientos similares quedaron intactos, y la gente comenzó a preguntarse
+
+32
+00:03:07,200 --> 00:03:11,733
+"¿Por qué Dios destruyó una ciudad de buenos ciudadanos?"
+
+33
+00:03:12,933 --> 00:03:16,933
+Para hacer una analogía japonesa, sería como si los santuarios y templos fueran destruidos
+
+34
+00:03:16,966 --> 00:03:21,333
+mientras los llamativos edificios del distrito de entretenimiento quedaran intactos
+
+35
+00:03:22,300 --> 00:03:25,100
+Aquí, dos interpretaciones entraron en conflicto
+
+36
+00:03:26,433 --> 00:03:29,233
+Una era la teoría tradicional del castigo divino
+
+37
+00:03:30,300 --> 00:03:34,233
+La interpretación de que era la ira de Dios contra los pecados de los ciudadanos
+
+38
+00:03:35,300 --> 00:03:42,333
+La otra era un nuevo enfoque: explorarlo científicamente como un fenómeno natural
+
+39
+00:03:43,300 --> 00:03:52,166
+Este conflicto se convirtió en el punto de partida para ver históricamente los terremotos como desastres naturales desde una perspectiva científica
+
+40
+00:03:54,033 --> 00:03:57,466
+De hecho, incluso antes del Gran Terremoto de Lisboa
+
+41
+00:03:57,466 --> 00:04:02,033
+ya se estaba desarrollando una cultura de observación científica en Europa
+
+42
+00:04:03,666 --> 00:04:07,966
+En 1660, se fundó la Royal Society de Londres
+
+43
+00:04:08,566 --> 00:04:11,533
+Su lema era "Nullius in verba"
+
+44
+00:04:12,333 --> 00:04:15,100
+que significa "No confíes en la palabra de nadie"
+
+45
+00:04:16,033 --> 00:04:18,266
+En otras palabras, no "porque lo dice la Biblia"
+
+46
+00:04:18,900 --> 00:04:21,200
+o "porque lo dice la Iglesia"
+
+47
+00:04:21,833 --> 00:04:27,166
+sino observar directamente, recopilar datos y pensar por uno mismo
+
+48
+00:04:28,500 --> 00:04:34,200
+En 1665, se lanzó la revista científica Philosophical Transactions
+
+49
+00:04:34,600 --> 00:04:37,100
+y los informes sobre terremotos comenzaron a acumularse
+
+50
+00:04:37,966 --> 00:04:44,700
+En los aproximadamente 90 años antes del Gran Terremoto de Lisboa, se recopilaron unos 70 registros de observación
+
+51
+00:04:45,800 --> 00:04:50,700
+Particularmente importante fue el terremoto de Londres de 1750
+
+52
+00:04:51,800 --> 00:04:55,433
+Se hicieron muchos informes sobre este terremoto
+
+53
+00:04:56,033 --> 00:04:58,833
+y aquí se hizo una observación interesante
+
+54
+00:05:00,033 --> 00:05:03,700
+Era el concepto de "trayectoria del terremoto"
+
+55
+00:05:04,333 --> 00:05:08,566
+El tiempo de llegada y la intensidad de las sacudidas variaban según el lugar
+
+56
+00:05:09,300 --> 00:05:14,566
+En otras palabras, surgió el reconocimiento de que "los terremotos son fenómenos en movimiento"
+
+57
+00:05:15,833 --> 00:05:22,200
+Este fue el punto de partida para nuestra comprensión moderna de la propagación de ondas sísmicas desde el epicentro
+
+58
+00:05:23,333 --> 00:05:26,466
+Así que para cuando ocurrió el Gran Terremoto de Lisboa
+
+59
+00:05:27,066 --> 00:05:31,000
+ya existía casi un siglo de registros de observación acumulados
+
+60
+00:05:31,466 --> 00:05:37,133
+y habían brotado las semillas de una metodología científica para interpretar los terremotos científicamente
+
+61
+00:05:38,533 --> 00:05:43,033
+Hasta ahora, hemos visto el período de preparación antes del Gran Terremoto de Lisboa
+
+62
+00:05:43,966 --> 00:05:49,600
+La acumulación de registros de observación, la regla empírica de que los terremotos son fenómenos en movimiento
+
+63
+00:05:50,400 --> 00:05:55,266
+Estos formaron la base que hizo posible la investigación científica después del desastre
+
+64
+00:05:56,600 --> 00:06:00,033
+Ahora, veamos cómo reaccionó realmente la gente
+
+65
+00:06:00,066 --> 00:06:03,500
+cuando ocurrió el gran terremoto
+
+66
+00:06:04,766 --> 00:06:07,566
+Bien, cuando ocurrió el Gran Terremoto de Lisboa
+
+67
+00:06:08,300 --> 00:06:11,833
+dos personas mostraron reacciones contrastantes
+
+68
+00:06:13,100 --> 00:06:17,466
+Uno fue el misionero jesuita Gabriel Malagrida
+
+69
+00:06:18,433 --> 00:06:23,433
+Él predicó que "Este es un castigo divino por los pecados de los ciudadanos"
+
+70
+00:06:24,533 --> 00:06:30,033
+El otro fue el Primer Ministro de Portugal, el Marqués de Pombal, Carvalho
+
+71
+00:06:30,433 --> 00:06:33,566
+Él tomó un enfoque completamente diferente
+
+72
+00:06:34,700 --> 00:06:38,533
+Carvalho realizó una encuesta científica mediante cuestionarios
+
+73
+00:06:39,633 --> 00:06:41,900
+Las preguntas eran algo así:
+
+74
+00:06:42,900 --> 00:06:46,733
+"¿A qué hora comenzó el terremoto y cuánto duró?"
+
+75
+00:06:48,000 --> 00:06:50,333
+"¿El mar se retiró o subió?"
+
+76
+00:06:51,300 --> 00:06:52,833
+"¿Cuál fue la altura?"
+
+77
+00:06:54,033 --> 00:06:57,100
+"¿Hubo un patrón direccional en los derrumbes de edificios?"
+
+78
+00:06:58,000 --> 00:07:02,766
+En otras palabras, en lugar de preguntar "¿Por qué Dios causó tal desastre?"
+
+79
+00:07:03,700 --> 00:07:06,133
+preguntó "¿Cómo ocurrió el terremoto?"
+
+80
+00:07:06,133 --> 00:07:11,233
+y "¿Qué tipo de daños resultaron del terremoto?"
+
+81
+00:07:12,833 --> 00:07:16,866
+Esta diferencia ilustra la esencia de la investigación científica
+
+82
+00:07:18,066 --> 00:07:23,833
+Mientras que la interpretación teológica pregunta "¿Por qué Dios causó esto?"
+
+83
+00:07:23,833 --> 00:07:29,666
+el enfoque científico busca aclarar cómo sucedió
+
+84
+00:07:31,166 --> 00:07:39,233
+Además, al reconstruir Lisboa, Carvalho adoptó la estructura antisísmica Gaiola
+
+85
+00:07:39,233 --> 00:07:46,300
+y según los informes, hizo que los soldados marcharan para hacer vibrar los edificios como prueba empírica
+
+86
+00:07:47,533 --> 00:07:55,166
+Esto se considera uno de los primeros ejemplos de aplicación de métodos científicos experimentales a la preparación para desastres
+
+87
+00:07:56,500 --> 00:08:02,766
+Las noticias del Gran Terremoto de Lisboa se extendieron por toda Europa, y muchos intelectuales respondieron
+
+88
+00:08:03,800 --> 00:08:08,433
+Uno de ellos fue el famoso filósofo Immanuel Kant
+
+89
+00:08:09,633 --> 00:08:15,700
+En 1756, Kant publicó tres artículos en rápida sucesión
+
+90
+00:08:16,966 --> 00:08:18,933
+El argumento de Kant fue claro
+
+91
+00:08:19,966 --> 00:08:24,333
+"Los terremotos son fenómenos puramente físicos y químicos"
+
+92
+00:08:25,600 --> 00:08:32,400
+Propuso una hipótesis de que los terremotos eran causados por la combustión subterránea de azufre y hierro
+
+93
+00:08:33,300 --> 00:08:37,566
+Desde la perspectiva de la sismología moderna, esta hipótesis ha sido refutada
+
+94
+00:08:38,633 --> 00:08:46,033
+Sin embargo, lo importante fue el intento de comprender los mecanismos de los terremotos como fenómenos científicos
+
+95
+00:08:47,433 --> 00:08:48,500
+Kant dijo:
+
+96
+00:08:49,200 --> 00:08:51,300
+"Los terremotos no son castigo divino"
+
+97
+00:08:52,000 --> 00:08:53,300
+"Son simplemente fenómenos naturales"
+
+98
+00:08:54,100 --> 00:08:59,900
+"Son fenómenos necesarios que siguen las leyes naturales y no tienen significado moral"
+
+99
+00:09:01,233 --> 00:09:04,633
+Esta fue una afirmación revolucionaria para su época
+
+100
+00:09:05,266 --> 00:09:07,733
+rechazando completamente la interpretación teológica
+
+101
+00:09:09,000 --> 00:09:14,266
+Luego apareció una persona que hizo importantes contribuciones al desarrollo de la sismología
+
+102
+00:09:15,200 --> 00:09:18,400
+El físico inglés John Michell
+
+103
+00:09:19,300 --> 00:09:27,333
+En 1759, Michell presentó un artículo sobre terremotos a la Royal Society
+
+104
+00:09:28,133 --> 00:09:31,566
+y fue elegido miembro en 1760
+
+105
+00:09:32,633 --> 00:09:35,533
+Este artículo es reconocido como una obra pionera en sismología
+
+106
+00:09:36,100 --> 00:09:38,300
+y sigue siendo muy valorado hoy en día
+
+107
+00:09:39,466 --> 00:09:41,966
+Las contribuciones de Michell fueron revolucionarias
+
+108
+00:09:43,000 --> 00:09:47,266
+Teorizó que los terremotos se propagan como ondas
+
+109
+00:09:48,366 --> 00:09:53,166
+Esta fue una de las primeras teorías en conceptualizar los terremotos como ondas
+
+110
+00:09:54,100 --> 00:09:58,933
+También propuso un enfoque geométrico para estimar dónde ocurrieron los terremotos
+
+111
+00:09:59,500 --> 00:10:03,333
+lo que ahora llamamos determinar el epicentro
+
+112
+00:10:04,600 --> 00:10:11,966
+Además, estimó la velocidad de propagación de los terremotos en aproximadamente 530 m/s
+
+113
+00:10:12,833 --> 00:10:18,300
+Ahora sabemos que las ondas sísmicas (ondas P) viajan a 5-8 km/s
+
+114
+00:10:19,000 --> 00:10:21,700
+pero esto fue un intento revolucionario para su época
+
+115
+00:10:22,933 --> 00:10:28,366
+Michell también señaló que los tsunamis son causados por terremotos submarinos
+
+116
+00:10:29,133 --> 00:10:33,033
+y que las fallas geológicas están relacionadas con los terremotos
+
+117
+00:10:34,200 --> 00:10:40,566
+Estas observaciones fueron contribuciones extremadamente importantes para comprender los terremotos científicamente
+
+118
+00:10:41,933 --> 00:10:47,933
+¿Qué permitió a Michell hacer estas observaciones científicas?
+
+119
+00:10:49,100 --> 00:10:51,000
+Fue el poder de los datos
+
+120
+00:10:52,200 --> 00:10:58,700
+La regla empírica del terremoto de Londres de 1750 de que los terremotos son fenómenos en movimiento
+
+121
+00:10:59,800 --> 00:11:03,066
+La encuesta sistemática de cuestionarios de Carvalho
+
+122
+00:11:04,200 --> 00:11:09,200
+Basándose en estos datos, Michell pudo estimar con precisión
+
+123
+00:11:09,200 --> 00:11:12,833
+que el epicentro del Gran Terremoto de Lisboa estaba en el Océano Atlántico
+
+124
+00:11:14,100 --> 00:11:19,900
+Aquí vemos el comienzo de la investigación científica de terremotos basada en datos
+
+125
+00:11:21,166 --> 00:11:24,733
+Ahora, pasemos a mediados del siglo XIX
+
+126
+00:11:25,566 --> 00:11:31,433
+Aquí conocemos a Robert Mallet, conocido como "el padre de la sismología"
+
+127
+00:11:32,233 --> 00:11:36,433
+Mallet estudió los terremotos mediante un enfoque experimental
+
+128
+00:11:37,600 --> 00:11:44,666
+En 1849, Mallet enterró explosivos bajo tierra y realizó experimentos de explosión
+
+129
+00:11:45,900 --> 00:11:50,500
+Midió la velocidad de las ondas sísmicas a una distancia de unos 800 metros
+
+130
+00:11:51,800 --> 00:11:55,700
+Aproximadamente 251 m/s en arena húmeda
+
+131
+00:11:56,366 --> 00:12:00,366
+Aproximadamente 427 m/s en granito
+
+132
+00:12:01,200 --> 00:12:05,833
+En otras palabras, demostró que la velocidad de propagación varía según el medio
+
+133
+00:12:06,800 --> 00:12:12,100
+Este fue un descubrimiento muy importante para comprender las propiedades de las ondas sísmicas
+
+134
+00:12:13,200 --> 00:12:19,133
+Y en 1858, Mallet creó un mapa de distribución sísmica mundial
+
+135
+00:12:20,700 --> 00:12:29,600
+Catalogó unos 6.800 terremotos históricos y demostró que los terremotos ocurren predominantemente en regiones específicas
+
+136
+00:12:30,866 --> 00:12:37,766
+Sorprendentemente, esta distribución coincide casi exactamente con los límites de las placas tectónicas que conocemos hoy
+
+137
+00:12:39,366 --> 00:12:44,133
+La investigación científica que comenzó con el Gran Terremoto de Lisboa de 1755
+
+138
+00:12:45,000 --> 00:12:49,666
+a través de las contribuciones de científicos como Kant, Michell y Mallet
+
+139
+00:12:50,433 --> 00:12:55,633
+puede decirse que estableció la sismología como una disciplina académica en aproximadamente 100 años
+
+140
+00:12:56,433 --> 00:13:02,166
+Y este conocimiento científico ahora se utiliza para la prevención y mitigación de desastres modernos
+
+141
+00:13:03,200 --> 00:13:08,633
+Sistemas de alerta temprana de terremotos, construcción antisísmica, sistemas de alerta de tsunamis
+
+142
+00:13:09,800 --> 00:13:14,733
+Todo esto puede considerarse una extensión de la investigación científica
+
+143
+00:13:14,733 --> 00:13:18,166
+que comenzó en Lisboa hace más de 250 años
+
+144
+00:13:21,566 --> 00:13:27,833
+El 1 de noviembre de 1755, el gran terremoto que azotó Lisboa
+
+145
+00:13:27,833 --> 00:13:34,000
+se convirtió en un importante catalizador para hacer de los desastres objetos de investigación de las ciencias naturales
+
+146
+00:13:35,200 --> 00:13:38,366
+Y hoy, ese conocimiento científico
+
+147
+00:13:38,366 --> 00:13:43,733
+se aplica en tecnologías de prevención y mitigación de desastres que protegen nuestras vidas
+
+148
+00:13:44,933 --> 00:13:51,100
+Espero que hayan percibido cómo la historia se conecta con nuestras vidas hoy
+
+149
+00:13:52,266 --> 00:13:55,166
+¡Hasta el próximo video, cuídense!

@@ -1,0 +1,595 @@
+1
+00:00:04,666 --> 00:00:11,166
+Do you know when disasters first became a subject of scientific research?
+
+2
+00:00:12,033 --> 00:00:19,466
+A major turning point was the Great Lisbon Earthquake that occurred on November 1, 1755
+
+3
+00:00:20,466 --> 00:00:27,933
+About 270 years ago in Europe, earthquakes were believed to be the wrath of God
+
+4
+00:00:28,700 --> 00:00:34,533
+The Great Lisbon Earthquake became a major catalyst for changing that belief
+
+5
+00:00:35,266 --> 00:00:39,733
+It not only made earthquakes a subject of scientific study
+
+6
+00:00:40,400 --> 00:00:45,500
+but also fundamentally transformed the way scientific research itself was conducted
+
+7
+00:00:46,600 --> 00:00:50,400
+Today, let's trace how disasters once thought to be divine wrath
+
+8
+00:00:50,833 --> 00:00:54,900
+became subjects of scientific inquiry
+
+9
+00:00:55,500 --> 00:00:57,966
+and explore this historical journey
+
+10
+00:01:01,066 --> 00:01:05,900
+First, let's look at the scale of the Great Lisbon Earthquake
+
+11
+00:01:06,666 --> 00:01:13,733
+It occurred on November 1, 1755, around 9:40 AM
+
+12
+00:01:14,733 --> 00:01:20,000
+The epicenter was about 220 km off Cape St. Vincent in the Atlantic Ocean
+
+13
+00:01:21,433 --> 00:01:25,100
+The estimated magnitude was between 8.5 and 9
+
+14
+00:01:26,333 --> 00:01:31,566
+Similar to or even larger than the 2011 Great East Japan Earthquake
+
+15
+00:01:32,533 --> 00:01:37,966
+This earthquake destroyed approximately 85% of the buildings in Lisbon
+
+16
+00:01:37,966 --> 00:01:42,600
+and the death toll is estimated to have reached 30,000 to 40,000 people
+
+17
+00:01:43,433 --> 00:01:47,100
+What was particularly terrifying was the triple disaster
+
+18
+00:01:47,866 --> 00:01:52,066
+First, building collapses from three major tremors
+
+19
+00:01:52,833 --> 00:01:57,433
+Then, a massive tsunami that struck after the sea first receded
+
+20
+00:01:58,500 --> 00:02:03,366
+And fires that broke out throughout the city from overturned cooking equipment
+
+21
+00:02:04,666 --> 00:02:09,100
+Contemporary copper engravings show the devastating scale of the destruction
+
+22
+00:02:10,500 --> 00:02:16,466
+Moreover, the tsunami reached as far as the Azores and the West Indies
+
+23
+00:02:17,033 --> 00:02:20,000
+and tremors were observed throughout Europe
+
+24
+00:02:20,600 --> 00:02:26,600
+This was a widespread disaster that caused massive damage across all of Europe and the Atlantic
+
+25
+00:02:27,466 --> 00:02:33,400
+So why did this earthquake become such a special turning point in the history of science?
+
+26
+00:02:34,733 --> 00:02:39,800
+It is deeply related to the timing and location of this earthquake
+
+27
+00:02:40,866 --> 00:02:46,866
+November 1st was All Saints' Day, an important Catholic holiday
+
+28
+00:02:48,066 --> 00:02:51,866
+Devout citizens were attending Mass in churches
+
+29
+00:02:52,433 --> 00:02:55,000
+when the earthquake struck at that very moment
+
+30
+00:02:56,233 --> 00:03:00,700
+While churches collapsed and many believers perished
+
+31
+00:03:01,200 --> 00:03:06,033
+brothels and similar establishments remained unscathed, and people began to question
+
+32
+00:03:07,200 --> 00:03:11,733
+"Why did God destroy a city of good citizens?"
+
+33
+00:03:12,933 --> 00:03:16,933
+To draw a Japanese analogy, it would be like shrines and temples being destroyed
+
+34
+00:03:16,966 --> 00:03:21,333
+while the flashy entertainment district buildings remained intact
+
+35
+00:03:22,300 --> 00:03:25,100
+Here, two interpretations came into conflict
+
+36
+00:03:26,433 --> 00:03:29,233
+One was the traditional divine punishment theory
+
+37
+00:03:30,300 --> 00:03:34,233
+The interpretation that it was God's wrath against the citizens' sins
+
+38
+00:03:35,300 --> 00:03:42,333
+The other was a new approach: exploring it scientifically as a natural phenomenon
+
+39
+00:03:43,300 --> 00:03:52,166
+This conflict became the starting point for historically viewing earthquakes as natural disasters from a scientific perspective
+
+40
+00:03:54,033 --> 00:03:57,466
+Actually, even before the Great Lisbon Earthquake
+
+41
+00:03:57,466 --> 00:04:02,033
+a culture of scientific observation was already developing in Europe
+
+42
+00:04:03,666 --> 00:04:07,966
+In 1660, the Royal Society of London was established
+
+43
+00:04:08,566 --> 00:04:11,533
+Its motto was "Nullius in verba"
+
+44
+00:04:12,333 --> 00:04:15,100
+meaning "Take nobody's word for it"
+
+45
+00:04:16,033 --> 00:04:18,266
+In other words, not "because the Bible says so"
+
+46
+00:04:18,900 --> 00:04:21,200
+or "because the Church says so"
+
+47
+00:04:21,833 --> 00:04:27,166
+but rather observe directly, gather data, and think for yourself
+
+48
+00:04:28,500 --> 00:04:34,200
+In 1665, the scientific journal Philosophical Transactions was launched
+
+49
+00:04:34,600 --> 00:04:37,100
+and earthquake reports began to accumulate
+
+50
+00:04:37,966 --> 00:04:44,700
+In the approximately 90 years before the Great Lisbon Earthquake, about 70 observational records were collected
+
+51
+00:04:45,800 --> 00:04:50,700
+Particularly important was the London earthquake of 1750
+
+52
+00:04:51,800 --> 00:04:55,433
+Many reports were made about this earthquake
+
+53
+00:04:56,033 --> 00:04:58,833
+and an interesting observation was made here
+
+54
+00:05:00,033 --> 00:05:03,700
+It was the concept of "earthquake trajectory"
+
+55
+00:05:04,333 --> 00:05:08,566
+The arrival time and intensity of shaking varied by location
+
+56
+00:05:09,300 --> 00:05:14,566
+In other words, the recognition emerged that "earthquakes are moving phenomena"
+
+57
+00:05:15,833 --> 00:05:22,200
+This was the starting point for our modern understanding of seismic wave propagation from the epicenter
+
+58
+00:05:23,333 --> 00:05:26,466
+So by the time the Great Lisbon Earthquake occurred
+
+59
+00:05:27,066 --> 00:05:31,000
+there was already nearly a century of accumulated observational records
+
+60
+00:05:31,466 --> 00:05:37,133
+and the seeds of a scientific methodology for interpreting earthquakes scientifically had sprouted
+
+61
+00:05:38,533 --> 00:05:43,033
+So far, we've looked at the preparatory period before the Great Lisbon Earthquake
+
+62
+00:05:43,966 --> 00:05:49,600
+The accumulation of observational records, the empirical rule that earthquakes are moving phenomena
+
+63
+00:05:50,400 --> 00:05:55,266
+These formed the foundation that made scientific investigation after the disaster possible
+
+64
+00:05:56,600 --> 00:06:00,033
+Now, let's look at how people actually reacted
+
+65
+00:06:00,066 --> 00:06:03,500
+when the great earthquake occurred
+
+66
+00:06:04,766 --> 00:06:07,566
+Now, when the Great Lisbon Earthquake struck
+
+67
+00:06:08,300 --> 00:06:11,833
+two people showed contrasting reactions
+
+68
+00:06:13,100 --> 00:06:17,466
+One was the Jesuit missionary Gabriel Malagrida
+
+69
+00:06:18,433 --> 00:06:23,433
+He preached that "This is divine punishment for the sins of the citizens"
+
+70
+00:06:24,533 --> 00:06:30,033
+The other was the Portuguese Prime Minister, the Marquis of Pombal, Carvalho
+
+71
+00:06:30,433 --> 00:06:33,566
+He took an entirely different approach
+
+72
+00:06:34,700 --> 00:06:38,533
+Carvalho conducted a scientific questionnaire survey
+
+73
+00:06:39,633 --> 00:06:41,900
+The questions were something like this:
+
+74
+00:06:42,900 --> 00:06:46,733
+"What time did the earthquake start and how long did it last?"
+
+75
+00:06:48,000 --> 00:06:50,333
+"Did the sea recede or rise?"
+
+76
+00:06:51,300 --> 00:06:52,833
+"How high was it?"
+
+77
+00:06:54,033 --> 00:06:57,100
+"Was there a directional pattern to building collapses?"
+
+78
+00:06:58,000 --> 00:07:02,766
+In other words, instead of asking "Why did God cause such a disaster?"
+
+79
+00:07:03,700 --> 00:07:06,133
+he asked "How did the earthquake occur?"
+
+80
+00:07:06,133 --> 00:07:11,233
+and "What kind of damage resulted from the earthquake?"
+
+81
+00:07:12,833 --> 00:07:16,866
+This difference illustrates the essence of scientific inquiry
+
+82
+00:07:18,066 --> 00:07:23,833
+While theological interpretation asks "Why did God cause this?"
+
+83
+00:07:23,833 --> 00:07:29,666
+the scientific approach seeks to clarify how it happened
+
+84
+00:07:31,166 --> 00:07:39,233
+Furthermore, when rebuilding Lisbon, Carvalho adopted the earthquake-resistant Gaiola structure
+
+85
+00:07:39,233 --> 00:07:46,300
+and reportedly had soldiers march to make buildings vibrate as an empirical test
+
+86
+00:07:47,533 --> 00:07:55,166
+This is considered one of the earliest examples of applying experimental scientific methods to disaster preparedness
+
+87
+00:07:56,500 --> 00:08:02,766
+News of the Great Lisbon Earthquake spread throughout Europe, and many intellectuals responded
+
+88
+00:08:03,800 --> 00:08:08,433
+One of them was the famous philosopher Immanuel Kant
+
+89
+00:08:09,633 --> 00:08:15,700
+In 1756, Kant published three papers in quick succession
+
+90
+00:08:16,966 --> 00:08:18,933
+Kant's argument was clear
+
+91
+00:08:19,966 --> 00:08:24,333
+"Earthquakes are purely physical and chemical phenomena"
+
+92
+00:08:25,600 --> 00:08:32,400
+He proposed a hypothesis that earthquakes were caused by underground combustion of sulfur and iron
+
+93
+00:08:33,300 --> 00:08:37,566
+From the perspective of modern seismology, this hypothesis has been disproven
+
+94
+00:08:38,633 --> 00:08:46,033
+However, what was important was the attempt to understand earthquake mechanisms as scientific phenomena
+
+95
+00:08:47,433 --> 00:08:48,500
+Kant said:
+
+96
+00:08:49,200 --> 00:08:51,300
+"Earthquakes are not divine punishment"
+
+97
+00:08:52,000 --> 00:08:53,300
+"They are merely natural phenomena"
+
+98
+00:08:54,100 --> 00:08:59,900
+"They are necessary phenomena following natural laws and have no moral meaning"
+
+99
+00:09:01,233 --> 00:09:04,633
+This was a revolutionary claim for its time
+
+100
+00:09:05,266 --> 00:09:07,733
+completely rejecting theological interpretation
+
+101
+00:09:09,000 --> 00:09:14,266
+Then a person who made important contributions to the development of seismology appeared
+
+102
+00:09:15,200 --> 00:09:18,400
+The English physicist John Michell
+
+103
+00:09:19,300 --> 00:09:27,333
+In 1759, Michell submitted a paper on earthquakes to the Royal Society
+
+104
+00:09:28,133 --> 00:09:31,566
+and was elected a Fellow in 1760
+
+105
+00:09:32,633 --> 00:09:35,533
+This paper is recognized as a pioneering work in seismology
+
+106
+00:09:36,100 --> 00:09:38,300
+and is still highly regarded today
+
+107
+00:09:39,466 --> 00:09:41,966
+Michell's contributions were groundbreaking
+
+108
+00:09:43,000 --> 00:09:47,266
+He theorized that earthquakes propagate as waves
+
+109
+00:09:48,366 --> 00:09:53,166
+This was one of the earliest theories to conceptualize earthquakes as waves
+
+110
+00:09:54,100 --> 00:09:58,933
+He also proposed a geometric approach to estimate where earthquakes occurred
+
+111
+00:09:59,500 --> 00:10:03,333
+what we now call determining the epicenter
+
+112
+00:10:04,600 --> 00:10:11,966
+Furthermore, he estimated the propagation speed of earthquakes at about 530 m/s
+
+113
+00:10:12,833 --> 00:10:18,300
+We now know that seismic waves (P-waves) travel at 5-8 km/s
+
+114
+00:10:19,000 --> 00:10:21,700
+but this was a revolutionary attempt for its time
+
+115
+00:10:22,933 --> 00:10:28,366
+Michell also pointed out that tsunamis are caused by submarine earthquakes
+
+116
+00:10:29,133 --> 00:10:33,033
+and that geological faulting is related to earthquakes
+
+117
+00:10:34,200 --> 00:10:40,566
+These insights were extremely important contributions to understanding earthquakes scientifically
+
+118
+00:10:41,933 --> 00:10:47,933
+What enabled Michell to make these scientific observations?
+
+119
+00:10:49,100 --> 00:10:51,000
+It was the power of data
+
+120
+00:10:52,200 --> 00:10:58,700
+The empirical rule from the 1750 London earthquake that earthquakes are moving phenomena
+
+121
+00:10:59,800 --> 00:11:03,066
+Carvalho's systematic questionnaire survey
+
+122
+00:11:04,200 --> 00:11:09,200
+Based on this data, Michell was able to accurately estimate
+
+123
+00:11:09,200 --> 00:11:12,833
+the epicenter of the Great Lisbon Earthquake as being in the Atlantic Ocean
+
+124
+00:11:14,100 --> 00:11:19,900
+Here we see the beginning of data-based scientific earthquake research
+
+125
+00:11:21,166 --> 00:11:24,733
+Now, let's move to the mid-19th century
+
+126
+00:11:25,566 --> 00:11:31,433
+Here we meet Robert Mallet, known as "the father of seismology"
+
+127
+00:11:32,233 --> 00:11:36,433
+Mallet studied earthquakes through an experimental approach
+
+128
+00:11:37,600 --> 00:11:44,666
+In 1849, Mallet buried explosives underground and conducted blast experiments
+
+129
+00:11:45,900 --> 00:11:50,500
+He measured the speed of seismic waves at a location about 800 meters away
+
+130
+00:11:51,800 --> 00:11:55,700
+About 251 m/s in wet sand
+
+131
+00:11:56,366 --> 00:12:00,366
+About 427 m/s in granite
+
+132
+00:12:01,200 --> 00:12:05,833
+In other words, he demonstrated that propagation speed varies depending on the medium
+
+133
+00:12:06,800 --> 00:12:12,100
+This was a very important discovery for understanding the properties of seismic waves
+
+134
+00:12:13,200 --> 00:12:19,133
+And in 1858, Mallet created a world seismic distribution map
+
+135
+00:12:20,700 --> 00:12:29,600
+He catalogued about 6,800 historical earthquakes and showed that earthquakes occur predominantly in specific regions
+
+136
+00:12:30,866 --> 00:12:37,766
+Remarkably, this distribution closely matches the plate boundaries we know today
+
+137
+00:12:39,366 --> 00:12:44,133
+The scientific inquiry that began with the 1755 Great Lisbon Earthquake
+
+138
+00:12:45,000 --> 00:12:49,666
+through the contributions of scientists like Kant, Michell, and Mallet
+
+139
+00:12:50,433 --> 00:12:55,633
+can be said to have established seismology as an academic discipline over about 100 years
+
+140
+00:12:56,433 --> 00:13:02,166
+And this scientific knowledge is now being used for modern disaster prevention and mitigation
+
+141
+00:13:03,200 --> 00:13:08,633
+Earthquake early warning systems, earthquake-resistant construction, tsunami warning systems
+
+142
+00:13:09,800 --> 00:13:14,733
+All of these can be said to be extensions of the scientific inquiry
+
+143
+00:13:14,733 --> 00:13:18,166
+that began in Lisbon over 250 years ago
+
+144
+00:13:21,566 --> 00:13:27,833
+On November 1, 1755, the great earthquake that struck Lisbon
+
+145
+00:13:27,833 --> 00:13:34,000
+became a major catalyst for making disasters subjects of natural science research
+
+146
+00:13:35,200 --> 00:13:38,366
+And today, that scientific knowledge
+
+147
+00:13:38,366 --> 00:13:43,733
+is being applied to disaster prevention and mitigation technologies that protect our lives
+
+148
+00:13:44,933 --> 00:13:51,100
+I hope you've gained a sense of how history connects to our lives today
+
+149
+00:13:52,266 --> 00:13:55,166
+Until next time, take care!

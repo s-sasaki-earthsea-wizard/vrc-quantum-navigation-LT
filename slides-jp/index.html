@@ -77,7 +77,7 @@
 
 <div class="highlight-box">
 
-
+※ 本日は**加速度測定**に注目。ジャイロ（回転測定）は割愛
 
 </div>
 
@@ -123,11 +123,23 @@ $$x(t) = \int_0^t v(\tau)  d\tau$$
 <div class="simple-box">
 
 * 加速度を**二重積分**して位置を求める
-  * $a \xrightarrow{\int} v \xrightarrow{\int} x$
+  * $a \xrightarrow{\int dt} v \xrightarrow{\int dt} x$
 * なぜ速度を直接測らない？
   * 飛行機の中で速度を感じるのは離着陸の時だけ
   * 等速運動中は外を見ないと自分の速度がわからない
   * 速度測定には**外部基準**が必要 → 慣性航法は**自己完結型**
+
+</div>
+
+---
+
+### 現状の解決策：GNSS補正
+
+<div class="simple-box">
+
+* 慣性航法の誤差蓄積を**外部情報で定期的に補正**
+* GPS、GLONASS、Galileo、みちびき等の**衛星測位システム（GNSS）**
+* 現在の航空機・船舶・自動車ナビの標準的な手法
 
 </div>
 
@@ -152,6 +164,32 @@ $$\delta x \sim \frac{1}{2} \delta a \cdot t^2$$
   * 民生用: $\sim 10^{-2}$ m/s²（スマホ等）
   * 航空機用: $\sim 10^{-5}$ m/s²（高精度MEMS）
 * 航法用でも10時間後に**約6.5km**のずれ
+
+</div>
+
+---
+
+### GNSSの限界
+
+<div class="highlight-box">
+
+衛星の電波が届かない場所では使用不可
+
+* 水中（潜水艦、水中ドローン）
+* トンネル・地下空間
+* 都市部のビル谷間（マルチパス問題）
+
+</div>
+
+<br>
+
+<div class="simple-box">
+
+**GNSSへの悪意のある攻撃**
+
+* **スプーフィング**: 偽のGPS信号で位置を誤認させる
+* **ジャミング**: 妨害電波でGPS受信を阻害
+* 軍事・重要インフラでは深刻な脅威
 
 </div>
 
@@ -219,7 +257,8 @@ $$\lambda_{\text{dB}} = \frac{h}{mv}$$
 
 <div class="simple-box">
 
-* **レーザー冷却（数μK）**: 現在の原子干渉計はこのレベル
+* **レーザー冷却（数μK）**: 
+  * 現在の原子干渉計はこのレベル
   * 速度分布が十分狭く実用的なコヒーレンス
 * **ボース=アインシュタイン凝縮（数百nK以下）**: 
   * 究極のコヒーレンスだが研究段階
@@ -403,6 +442,71 @@ $$P_g = \cos^2\left(\frac{\Delta\phi}{2}\right)$$
 <div class="highlight-box">
 
 本質は同じ: **確率振幅の重ね合わせ**が干渉として観測される
+
+</div>
+
+---
+
+### 量子航法への応用
+
+<div class="simple-box">
+
+* 今回は**重力方向**（自由落下）を例にしたが、**どの方向でも同様**
+* 3軸に配置 → 加速度ベクトル $\vec{a} = (a_x, a_y, a_z)$ を測定
+
+</div>
+
+<br>
+
+<div class="highlight-box">
+
+$$\vec{a} \xrightarrow{\int dt} \vec{v} \xrightarrow{\int dt} \vec{x}$$
+
+加速度を2回積分して**自己位置推定**（従来の慣性航法と同じ原理）
+
+</div>
+
+<br>
+
+<div class="two-column">
+<div class="column-left">
+
+**従来のIMU**
+* ドリフト誤差が蓄積
+* 長時間で位置精度が劣化
+
+</div>
+<div class="column-right">
+
+**原子干渉計**
+* 原子遷移周波数が基準
+* ドリフトが極めて小さい
+
+</div>
+</div>
+
+<br>
+
+→ **GNSSフリー**で高精度な航法が可能
+
+---
+
+### 実用化の動向（2025年）
+
+<div class="simple-box">
+
+**飛行実証**
+* ボーイング社: 4時間GPS不要飛行
+* Q-CTRL社: セスナ機で22m精度 (TIME誌ベスト発明賞受賞)
+* 英国海軍: 潜水艦での試験成功
+
+</div>
+
+<br>
+
+<div class="highlight-box">
+
+* まだ発展途上だが、**GPS denied環境**での需要は高い
 
 </div>
 

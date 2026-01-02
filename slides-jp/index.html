@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>量子航法で超高精度な位置測定　〜冷えた原子がGPSを置き換える？〜</title>
+  <title>量子航法で超高精度な位置測定　〜冷たい原子がGPSを置き換える？〜</title>
 
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
@@ -28,7 +28,7 @@
         <textarea data-template>
 
 ### 量子航法で超高精度な位置測定
-#### 冷えた原子がGPSを置き換える？
+#### 冷たい原子がGPSを置き換える？
 
 <img src="assets/images/title.png" height="400px">
 
@@ -46,9 +46,8 @@
 	* 📸 コンピュータビジョン (画像認識/点群処理)
 	* 🌍 空間情報処理 (地理情報/リモートセンシング)
 	* ☁️ クラウドインフラ設計/IaC (AWS, GCP)
-* [GitHub](https://github.com/s-sasaki-earthsea-wizard)
-* [YouTube](https://www.youtube.com/@SyotaSasaki-EW)
-* [Speaker Deck](https://speakerdeck.com/syotasasaki593876)
+* 学生時代は地球物理学を専攻
+* 地球観測技術のエンジニアとして活動中
 
 </div>
 
@@ -97,6 +96,8 @@
 
 </div>
 
+<img src="assets/images/knot.png" height="300px">
+
 ---
 
 ### VTグラフと移動距離
@@ -138,10 +139,12 @@ $$x(t) = \int_0^t v(\tau)  d\tau$$
 <div class="simple-box">
 
 * 慣性航法の誤差蓄積を**外部情報で定期的に補正**
-* GPS、GLONASS、Galileo、みちびき等の**衛星測位システム（GNSS）**
+* GPS等の**衛星測位システム（GNSS）**
 * 現在の航空機・船舶・自動車ナビの標準的な手法
 
 </div>
+
+<img src="assets/images/640px-Artist's_global_concept_of_the_NAVSTAR_Global_Positioning_System_Satellite_-_DPLA_-_e1743941362296beee266682f3b33ed0.jpeg" width="600px">
 
 ---
 
@@ -177,7 +180,7 @@ $$\delta x \sim \frac{1}{2} \delta a \cdot t^2$$
 
 * 水中（潜水艦、水中ドローン）
 * トンネル・地下空間
-* 都市部のビル谷間（マルチパス問題）
+* 都市部のビル谷間
 
 </div>
 
@@ -357,7 +360,8 @@ $$\lambda_{\text{dB}} = \frac{h}{mv}$$
 
 $$|g\rangle \to \frac{|g\rangle + |e\rangle}{\sqrt{2}}$$
 
-重ね合わせ状態を生成
+* 重ね合わせ状態を生成
+* ハーフミラーに相当
 
 </div>
 <div class="column-right">
@@ -366,7 +370,8 @@ $$|g\rangle \to \frac{|g\rangle + |e\rangle}{\sqrt{2}}$$
 
 $$|g\rangle \leftrightarrow |e\rangle$$
 
-状態を完全に反転
+* 状態を完全に反転
+* ミラーに相当
 
 </div>
 </div>
@@ -466,19 +471,21 @@ $$\vec{a} \xrightarrow{\int dt} \vec{v} \xrightarrow{\int dt} \vec{x}$$
 
 </div>
 
-<br>
+---
 
 <div class="two-column">
 <div class="column-left">
 
-**従来のIMU**
+**従来のMEMS加速度計**
+* 精度: $\sim 10^{-5}$ m/s²（航法用）
 * ドリフト誤差が蓄積
-* 長時間で位置精度が劣化
+* 10時間で約6.5kmのずれ
 
 </div>
 <div class="column-right">
 
 **原子干渉計**
+* 精度: $\sim 10^{-9 \sim -12}$ m/s²
 * 原子遷移周波数が基準
 * ドリフトが極めて小さい
 
@@ -487,7 +494,7 @@ $$\vec{a} \xrightarrow{\int dt} \vec{v} \xrightarrow{\int dt} \vec{x}$$
 
 <br>
 
-→ **GNSSフリー**で高精度な航法が可能
+**4桁以上の精度向上** → **GNSSフリー**で高精度な航法が可能
 
 ---
 
@@ -495,10 +502,10 @@ $$\vec{a} \xrightarrow{\int dt} \vec{v} \xrightarrow{\int dt} \vec{x}$$
 
 <div class="simple-box">
 
-**飛行実証**
-* ボーイング社: 4時間GPS不要飛行
-* Q-CTRL社: セスナ機で22m精度 (TIME誌ベスト発明賞受賞)
-* 英国海軍: 潜水艦での試験成功
+**実証実験の成功が数多く報告**
+* **ボーイング社**: 4時間GPS不要飛行
+* **Q-CTRL社**: セスナ機で22m精度 (TIME誌2025年ベスト発明賞受賞)
+* **英国海軍**: 潜水艦での試験成功
 
 </div>
 
@@ -506,7 +513,28 @@ $$\vec{a} \xrightarrow{\int dt} \vec{v} \xrightarrow{\int dt} \vec{x}$$
 
 <div class="highlight-box">
 
-* まだ発展途上だが、**GPS denied環境**での需要は高い
+* 研究途上だが次世代の測位技術として高い注目
+* **技術革新**と**コスト削減**が商用化の課題
+</div>
+
+---
+
+### まとめ
+
+<div class="simple-box">
+
+1. **慣性航法の課題**: 加速度計の誤差が積分で蓄積
+2. **冷却原子**: 速度分布を狭め、波長を揃えてコヒーレンスを確保
+3. **原子干渉計**: ラマン遷移で経路を分岐、加速度を位相差として検出
+4. **量子航法**: 3軸展開でドリフトの小さい**GNSSフリー航法**が可能に
+
+</div>
+
+<br>
+
+<div class="highlight-box">
+
+原子(プランク定数: $\hbar$)と光(光速: $c$)という**自然の基本定数**を基準にすることで、人工物の限界を超える
 
 </div>
 

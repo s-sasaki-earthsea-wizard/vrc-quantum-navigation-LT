@@ -22,16 +22,15 @@ GPSが使えない海の中や地下でも、超高精度に自分の位置が�
 ・ 原子干渉計の原理を理解したい人
 ・ 最新の量子技術トレンドを追いかけたい人
 
-🕐 チャプター (These timestamps are just placeholders)
+🕐 チャプター
 00:00 | オープニング
-00:00 | 慣性航法の基礎：なぜ加速度を測るのか
-00:00 | 誤差蓄積問題とGNSSの限界
-00:00 | 冷却原子の波動性：ド・ブロイ波とコヒーレンス
-00:00 | レーザー冷却の原理
-00:00 | 原子干渉計：ラマン遷移とパルスシーケンス
-00:00 | 量子センサーの精度と優位性
-00:00 | 実用化の最前線（2025年）
-00:00 | まとめ
+00:30 | 慣性航法の基礎
+02:30 | 慣性航法の問題点とGPSの限界
+04:00 | なぜ「冷やした原子」なのか
+06:30 | 原子干渉計の仕組み
+10:00 | 量子航法の威力
+11:30 | 実用化の最前線
+12:30 | まとめ
 
 🗒️ スライドはこちら
 → [Speaker Deck URL]
@@ -54,12 +53,15 @@ GPSが使えない海の中や地下でも、超高精度に自分の位置が�
 https://lit.link/samegiraffe
 
 📚 主要参考文献
-・ Kasevich & Chu (1991) - 原子干渉計による重力測定の先駆的研究
-・ Boeing (2024) - 量子航法による4時間GPS不要飛行の実証
-・ Q-CTRL Ironstone Opal (2025) - セスナ機で22m精度を達成、TIME誌ベスト発明賞受賞
-・ 英国海軍 - 潜水艦での量子航法試験
+・ N. Kafaei, A. Motazedifard, "A Short Introduction to Basic Principles of Quantum Navigation Based-on Rb Cold Atom Interferometry", https://arxiv.org/abs/2405.14910
+・ O. Sambataro, R. Costanzi, J. Alves, et al., "Current Trends and Advances in Quantum Navigation for Maritime Applications: A Comprehensive Review", January 2025IEEE Journal of Oceanic Engineering PP(99):1-34
+DOI:10.1109/JOE.2025.3538941, https://arxiv.org/abs/2310.04729
+・ MITテクノロジーレビュー記事: https://www.technologyreview.jp/s/374029/quantum-navigation-could-solve-the-militarys-gps-jamming-problem/
+・ ボーイング社の量子航法による4時間GPS不要飛行の実証: https://www.boeing.com/innovation/innovation-quarterly/2025/03/beyond-gps-quantum-navigation-flight-test
+・ Q-CTRL Ironstone Opal - セスナ機で22m精度を達成、TIME誌ベスト発明賞受賞: https://www.gpsworld.com/q-ctrls-quantum-navigation-named-to-times-best-invention-list/
+・ 英国海軍 - 潜水艦での量子航法試験: https://www.royalnavy.mod.uk/news/2025/december/19/20251219-royal-navy-trials-quantum-tech-with-imperial-college-london
 
-ℹ️ 特にクレジット表記のない画像・動画は、Wikimedia Commonsより利用しています。
+ℹ️ 特にクレジット表記のない画像・動画は、Wikimedia CommonsやPexels、Mixkitなどのフリー素材サイトより利用しています。
 
 🎶 今回の動画では以下のサイト様から音楽や効果音の素材をお借りしました
 

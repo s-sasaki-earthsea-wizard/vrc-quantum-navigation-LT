@@ -620,3 +620,314 @@ class LaserCoolingEnergyDiagram(Scene):
 
         self.play(Write(conclusion))
         self.wait(3)
+
+
+class DopplerSelectiveCooling(Scene):
+    """ドップラー効果による選択的冷却の詳細図解"""
+
+    def construct(self):
+        # タイトル
+        title = Text("ドップラー効果による選択的減速", font_size=32, color=WHITE).to_edge(UP)
+        self.play(Write(title))
+
+        # ===== パート1: 周波数の説明 =====
+        freq_title = Text("レーザー周波数の設定", font_size=24, color=YELLOW).shift(UP * 2.2)
+        self.play(Write(freq_title))
+
+        # 周波数軸
+        freq_axis = NumberLine(
+            x_range=[0, 10, 2],
+            length=8,
+            include_numbers=False,
+            include_tip=True,
+        ).shift(UP * 1)
+
+        freq_label = MathTex(r"\nu", font_size=28).next_to(freq_axis.get_right(), RIGHT)
+        self.play(Create(freq_axis), Write(freq_label))
+
+        # 共鳴周波数
+        resonance_pos = freq_axis.n2p(6)
+        resonance_line = DashedLine(
+            resonance_pos + UP * 0.5,
+            resonance_pos + DOWN * 0.5,
+            color=WHITE,
+            stroke_width=2,
+        )
+        resonance_label = MathTex(r"\nu_0", font_size=24, color=WHITE).next_to(resonance_line, UP)
+        resonance_text = Text("共鳴周波数", font_size=16, color=WHITE).next_to(resonance_label, UP, buff=0.1)
+
+        # レーザー周波数（共鳴より低い = 赤方偏移）
+        laser_pos = freq_axis.n2p(4)
+        laser_line = Line(
+            laser_pos + UP * 0.4,
+            laser_pos + DOWN * 0.4,
+            color=RED,
+            stroke_width=4,
+        )
+        laser_label = MathTex(r"\nu_L", font_size=24, color=RED).next_to(laser_line, DOWN)
+        laser_text = Text("レーザー", font_size=16, color=RED).next_to(laser_label, DOWN, buff=0.1)
+
+        self.play(
+            Create(resonance_line), Write(resonance_label), Write(resonance_text),
+            Create(laser_line), Write(laser_label), Write(laser_text),
+        )
+
+        # 赤方偏移の説明
+        offset_brace = BraceBetweenPoints(laser_pos, resonance_pos, direction=DOWN)
+        offset_label = Text("赤方偏移", font_size=16, color=YELLOW).next_to(offset_brace, DOWN, buff=0.1)
+
+        self.play(Create(offset_brace), Write(offset_label))
+        self.wait(1)
+
+        # 上部をまとめて縮小・移動
+        freq_group = VGroup(
+            freq_title, freq_axis, freq_label,
+            resonance_line, resonance_label, resonance_text,
+            laser_line, laser_label, laser_text,
+            offset_brace, offset_label
+        )
+        self.play(freq_group.animate.scale(0.7).to_edge(UP, buff=0.5))
+
+        # ===== パート2: 近づく原子 =====
+        # ボックスタイトル
+        approaching_title = Text("① 近づく原子", font_size=22, color=BLUE).shift(LEFT * 3.5 + UP * 0.5)
+
+        # 原子とレーザーの図
+        laser_left = Arrow(LEFT * 5.5, LEFT * 2.5, color=RED, stroke_width=4)
+        laser_left.shift(DOWN * 0.5)
+        laser_left_label = Text("レーザー", font_size=14, color=RED).next_to(laser_left, UP, buff=0.1)
+
+        atom_approaching = Circle(radius=0.25, color=BLUE, fill_opacity=0.8)
+        atom_approaching.shift(LEFT * 2 + DOWN * 0.5)
+
+        atom_vel = Arrow(
+            atom_approaching.get_center(),
+            atom_approaching.get_center() + LEFT * 0.8,
+            color=GREEN, buff=0, stroke_width=4
+        )
+        vel_label = MathTex("v", font_size=20, color=GREEN).next_to(atom_vel, UP, buff=0.05)
+
+        self.play(
+            Write(approaching_title),
+            GrowArrow(laser_left), Write(laser_left_label),
+            FadeIn(atom_approaching), GrowArrow(atom_vel), Write(vel_label),
+        )
+
+        # ドップラー効果の説明
+        doppler_up = VGroup(
+            Text("原子から見ると:", font_size=16, color=WHITE),
+            MathTex(r"\nu' = \nu_L + \Delta\nu", font_size=22, color=BLUE),
+            Text("青方偏移 → 共鳴!", font_size=18, color=BLUE),
+        ).arrange(DOWN, buff=0.15, aligned_edge=LEFT)
+        doppler_up.next_to(atom_approaching, DOWN, buff=0.4)
+
+        self.play(Write(doppler_up))
+        self.wait(0.5)
+
+        # 吸収のアニメーション
+        photon = Dot(color=RED, radius=0.1).move_to(LEFT * 5)
+        self.play(photon.animate.move_to(atom_approaching.get_center()), run_time=0.5)
+        self.play(
+            Flash(atom_approaching, color=YELLOW, line_length=0.2, num_lines=8, run_time=0.3),
+            atom_approaching.animate.set_color(PURPLE),
+            FadeOut(photon),
+        )
+
+        result_left = Text("→ 光を吸収して減速!", font_size=18, color=GREEN)
+        result_left.next_to(doppler_up, DOWN, buff=0.3)
+        self.play(Write(result_left))
+        self.wait(1)
+
+        # ===== パート3: 遠ざかる原子 =====
+        # ボックスタイトル
+        receding_title = Text("② 遠ざかる原子", font_size=22, color=GRAY).shift(RIGHT * 3.5 + UP * 0.5)
+
+        # 原子とレーザーの図
+        laser_right = Arrow(RIGHT * 1.5, RIGHT * 4.5, color=RED, stroke_width=4)
+        laser_right.shift(DOWN * 0.5)
+        laser_right_label = Text("レーザー", font_size=14, color=RED).next_to(laser_right, UP, buff=0.1)
+
+        atom_receding = Circle(radius=0.25, color=GRAY, fill_opacity=0.5)
+        atom_receding.shift(RIGHT * 5 + DOWN * 0.5)
+
+        atom_vel_r = Arrow(
+            atom_receding.get_center(),
+            atom_receding.get_center() + RIGHT * 0.8,
+            color=GRAY, buff=0, stroke_width=4
+        )
+        vel_label_r = MathTex("v", font_size=20, color=GRAY).next_to(atom_vel_r, UP, buff=0.05)
+
+        self.play(
+            Write(receding_title),
+            GrowArrow(laser_right), Write(laser_right_label),
+            FadeIn(atom_receding), GrowArrow(atom_vel_r), Write(vel_label_r),
+        )
+
+        # ドップラー効果の説明
+        doppler_down = VGroup(
+            Text("原子から見ると:", font_size=16, color=WHITE),
+            MathTex(r"\nu' = \nu_L - \Delta\nu", font_size=22, color=GRAY),
+            Text("さらに赤方偏移 → 非共鳴", font_size=18, color=GRAY),
+        ).arrange(DOWN, buff=0.15, aligned_edge=LEFT)
+        doppler_down.next_to(atom_receding, DOWN, buff=0.4)
+
+        self.play(Write(doppler_down))
+        self.wait(0.5)
+
+        # 吸収されない
+        photon2 = Dot(color=RED, radius=0.1).move_to(RIGHT * 2)
+        self.play(photon2.animate.move_to(RIGHT * 5.5), run_time=0.5)
+        self.remove(photon2)
+
+        result_right = Text("→ 光を吸収しない", font_size=18, color=GRAY)
+        result_right.next_to(doppler_down, DOWN, buff=0.3)
+        self.play(Write(result_right))
+        self.wait(1)
+
+        # ===== 結論 =====
+        conclusion_box = VGroup(
+            Text("結論:", font_size=24, color=YELLOW),
+            Text("「速い原子だけ」が選択的に減速される", font_size=22, color=YELLOW),
+        ).arrange(DOWN, buff=0.15)
+        conclusion_box.to_edge(DOWN, buff=0.3)
+
+        box = SurroundingRectangle(conclusion_box, color=YELLOW, buff=0.2)
+
+        self.play(Write(conclusion_box), Create(box))
+        self.wait(2)
+
+        # フェードアウト
+        self.play(*[FadeOut(mob) for mob in self.mobjects])
+
+
+class DopplerFrequencyShift(Scene):
+    """ドップラー効果による周波数シフトの視覚化"""
+
+    def construct(self):
+        # タイトル
+        title = Text("ドップラー効果と共鳴条件", font_size=32, color=WHITE).to_edge(UP)
+        self.play(Write(title))
+
+        # 周波数スペクトル軸
+        axes = Axes(
+            x_range=[0, 10, 2],
+            y_range=[0, 1.2, 0.5],
+            x_length=10,
+            y_length=3,
+            axis_config={"include_tip": True},
+        ).shift(DOWN * 0.5)
+
+        x_label = MathTex(r"\nu", font_size=28).next_to(axes.get_x_axis(), RIGHT)
+        y_label = Text("吸収率", font_size=20).next_to(axes.get_y_axis(), UP)
+
+        self.play(Create(axes), Write(x_label), Write(y_label))
+
+        # 共鳴線（ローレンツ型）
+        def lorentzian(x, x0, gamma=0.3):
+            return gamma**2 / ((x - x0)**2 + gamma**2)
+
+        resonance_curve = axes.plot(
+            lambda x: lorentzian(x, 6),
+            x_range=[3, 9],
+            color=WHITE,
+            stroke_width=3,
+        )
+
+        resonance_label = MathTex(r"\nu_0", font_size=24, color=WHITE)
+        resonance_label.next_to(axes.c2p(6, 1), UP)
+
+        self.play(Create(resonance_curve), Write(resonance_label))
+        self.wait(0.5)
+
+        # レーザー周波数（赤方偏移）
+        laser_line = DashedLine(
+            axes.c2p(4, 0),
+            axes.c2p(4, 1.1),
+            color=RED,
+            stroke_width=2,
+        )
+        laser_label = MathTex(r"\nu_L", font_size=24, color=RED)
+        laser_label.next_to(axes.c2p(4, 1.1), UP)
+
+        self.play(Create(laser_line), Write(laser_label))
+
+        # 説明テキスト
+        explanation = Text(
+            "レーザーは共鳴より低い周波数に設定",
+            font_size=20, color=YELLOW
+        ).to_edge(DOWN, buff=1.5)
+        self.play(Write(explanation))
+        self.wait(1)
+
+        # 近づく原子：青方偏移で共鳴位置へ
+        approaching_dot = Dot(axes.c2p(4, 0.1), color=BLUE, radius=0.15)
+        approaching_label = Text("近づく原子", font_size=16, color=BLUE)
+        approaching_label.next_to(approaching_dot, DOWN)
+
+        self.play(FadeIn(approaching_dot), Write(approaching_label))
+
+        # 青方偏移のアニメーション
+        shift_arrow = Arrow(
+            axes.c2p(4, 0.5),
+            axes.c2p(6, 0.5),
+            color=BLUE,
+            stroke_width=3,
+        )
+        shift_label = Text("青方偏移", font_size=16, color=BLUE).next_to(shift_arrow, UP)
+
+        self.play(
+            approaching_dot.animate.move_to(axes.c2p(6, 1)),
+            GrowArrow(shift_arrow),
+            Write(shift_label),
+            run_time=1.5,
+        )
+
+        # 共鳴！
+        resonance_flash = Text("共鳴!", font_size=24, color=GREEN)
+        resonance_flash.next_to(approaching_dot, RIGHT)
+        self.play(
+            Flash(approaching_dot, color=GREEN, line_length=0.3),
+            Write(resonance_flash),
+        )
+        self.wait(1)
+
+        # 遠ざかる原子：さらに赤方偏移
+        receding_dot = Dot(axes.c2p(4, 0.1), color=GRAY, radius=0.15)
+        receding_label = Text("遠ざかる原子", font_size=16, color=GRAY)
+        receding_label.next_to(receding_dot, DOWN)
+
+        # 前のものを少し透明に
+        self.play(
+            approaching_dot.animate.set_opacity(0.3),
+            approaching_label.animate.set_opacity(0.3),
+            shift_arrow.animate.set_opacity(0.3),
+            shift_label.animate.set_opacity(0.3),
+            resonance_flash.animate.set_opacity(0.3),
+        )
+
+        self.play(FadeIn(receding_dot), Write(receding_label))
+
+        # 赤方偏移
+        shift_arrow2 = Arrow(
+            axes.c2p(4, 0.3),
+            axes.c2p(2, 0.3),
+            color=GRAY,
+            stroke_width=3,
+        )
+        shift_label2 = Text("赤方偏移", font_size=16, color=GRAY).next_to(shift_arrow2, UP)
+
+        self.play(
+            receding_dot.animate.move_to(axes.c2p(2, 0.05)),
+            GrowArrow(shift_arrow2),
+            Write(shift_label2),
+            run_time=1.5,
+        )
+
+        # 非共鳴
+        no_resonance = Text("非共鳴", font_size=24, color=GRAY)
+        no_resonance.next_to(receding_dot, LEFT)
+        self.play(Write(no_resonance))
+        self.wait(2)
+
+        # フェードアウト
+        self.play(*[FadeOut(mob) for mob in self.mobjects])

@@ -1,0 +1,563 @@
+1
+00:00:00,233 --> 00:00:03,100
+El GPS del smartphone es muy conveniente, ¿verdad?
+
+2
+00:00:03,633 --> 00:00:06,966
+Me da vergüenza admitirlo, pero tengo muy mal sentido de la orientación
+
+3
+00:00:07,266 --> 00:00:14,100
+Sin GPS y aplicaciones de mapas
+apenas puedo llegar a mi destino
+
+4
+00:00:14,500 --> 00:00:19,700
+Pero el GPS depende de señales del espacio
+
+5
+00:00:20,266 --> 00:00:25,700
+No funciona cuando estás en un túnel
+o en un ferry en el mar
+
+6
+00:00:26,333 --> 00:00:29,966
+Y también puede ser inutilizado por interferencias maliciosas
+
+7
+00:00:30,933 --> 00:00:37,066
+Pero, ¿existe alguna forma de medir la posición con alta precisión sin GPS?
+
+8
+00:00:37,900 --> 00:00:45,500
+De hecho, una tecnología llamada navegación cuántica
+que usa átomos ultrafríos se está desarrollando rápidamente
+
+9
+00:00:46,133 --> 00:00:53,466
+En 2025, Boeing y la Marina Británica
+lograron pruebas de demostración exitosas
+
+10
+00:00:54,000 --> 00:00:57,833
+Hoy explicaré por qué enfriar átomos
+nos permite determinar la posición
+
+11
+00:00:58,533 --> 00:01:00,400
+Veamos cómo funciona
+
+12
+00:01:03,333 --> 00:01:10,733
+Primero, hablemos del método más clásico
+para conocer tu posición sin GPS
+
+13
+00:01:11,533 --> 00:01:16,466
+¿Han oído hablar de la unidad de velocidad llamada "nudo"?
+
+14
+00:01:17,633 --> 00:01:20,000
+Se usa para medir la velocidad de los barcos
+
+15
+00:01:20,700 --> 00:01:25,966
+Esta unidad proviene de un método de medición
+inventado por antiguos marineros
+
+16
+00:01:26,866 --> 00:01:29,933
+Ataban nudos a intervalos regulares en una cuerda
+
+17
+00:01:30,433 --> 00:01:32,233
+Y la arrojaban al mar
+
+18
+00:01:33,000 --> 00:01:37,666
+Contaban cuántos nudos pasaban
+mientras caía la arena del reloj de arena
+
+19
+00:01:38,300 --> 00:01:40,166
+Así determinaban la velocidad
+
+20
+00:01:40,866 --> 00:01:43,433
+Es un método muy ingenioso, ¿no creen?
+
+21
+00:01:43,933 --> 00:01:47,566
+La distancia recorrida se calcula multiplicando velocidad por tiempo
+
+22
+00:01:48,000 --> 00:01:53,366
+Es una fórmula de secundaria,
+pero es la base de la navegación inercial
+
+23
+00:01:53,966 --> 00:01:57,600
+Pero en el movimiento real, la velocidad cambia, ¿verdad?
+
+24
+00:01:58,366 --> 00:02:00,300
+Acelerando y desacelerando
+
+25
+00:02:01,133 --> 00:02:08,266
+En ese caso, puedes graficar velocidad contra tiempo
+y encontrar la distancia recorrida calculando el área bajo la curva
+
+26
+00:02:08,766 --> 00:02:11,800
+Esto es lo que en matemáticas llamamos integración
+
+27
+00:02:12,266 --> 00:02:21,000
+Pero los aviones y barcos modernos normalmente miden
+la aceleración, no la velocidad, para determinar la posición
+
+28
+00:02:21,833 --> 00:02:26,033
+¿Por qué medir la aceleración en lugar de la velocidad?
+
+29
+00:02:26,900 --> 00:02:32,766
+Cuando estás en un avión,
+sientes el despegue y el aterrizaje con tu cuerpo, ¿verdad?
+
+30
+00:02:33,433 --> 00:02:40,200
+Pero en vuelo estable, sin mirar por la ventana,
+ni siquiera sabes si te estás moviendo
+
+31
+00:02:40,700 --> 00:02:47,866
+Es decir, es difícil medir directamente la velocidad
+dentro de un vehículo que se mueve a velocidad constante
+
+32
+00:02:48,433 --> 00:02:51,466
+Medir la velocidad requiere una referencia externa
+
+33
+00:02:52,333 --> 00:02:56,700
+Pero la aceleración puede medirse sin referencia externa
+
+34
+00:02:57,266 --> 00:03:04,400
+Por eso la navegación inercial mide la aceleración
+y la integra dos veces para encontrar la posición
+
+35
+00:03:05,300 --> 00:03:12,200
+Es un sistema autónomo que funciona
+sin información externa
+
+36
+00:03:12,833 --> 00:03:15,800
+Pero aquí hay un gran problema
+
+37
+00:03:16,966 --> 00:03:24,233
+Si hay un pequeño error en el acelerómetro,
+ese error se acumula con cada integración
+
+38
+00:03:24,933 --> 00:03:34,833
+Además, como la distancia se calcula integrando
+la aceleración dos veces, el error crece proporcionalmente al cuadrado del tiempo
+
+39
+00:03:35,466 --> 00:03:45,266
+Incluso con los acelerómetros de aviación de alta precisión actuales,
+el error alcanza unos 6,5 km en 10 horas
+
+40
+00:03:45,900 --> 00:03:49,533
+Esto lo hace inútil para navegación de larga distancia
+
+41
+00:03:50,400 --> 00:03:57,200
+Por eso actualmente se usan correcciones periódicas con GPS
+para resetear el error
+
+42
+00:03:57,800 --> 00:04:02,000
+Aviones, barcos, smartphones, todos usan este método
+
+43
+00:04:03,066 --> 00:04:11,333
+Por eso la tecnología de posicionamiento actual
+requiere información externa como el GPS
+
+44
+00:04:11,866 --> 00:04:14,966
+Pero el GPS también tiene debilidades
+
+45
+00:04:15,066 --> 00:04:21,900
+Como usa ondas de radio de satélites,
+naturalmente no funciona donde la señal no llega
+
+46
+00:04:22,800 --> 00:04:24,133
+Por ejemplo, bajo el agua
+
+47
+00:04:25,066 --> 00:04:29,900
+El GPS no puede medir la posición de submarinos o drones submarinos
+
+48
+00:04:30,766 --> 00:04:36,833
+Tampoco funciona en túneles, espacios subterráneos o cañones urbanos
+
+49
+00:04:37,500 --> 00:04:41,266
+Más aterrador aún son los ataques maliciosos
+
+50
+00:04:42,033 --> 00:04:52,633
+El spoofing envía señales GPS falsas causando errores de posición,
+y el jamming inutiliza el GPS con interferencias
+
+51
+00:04:52,800 --> 00:04:58,333
+En zonas de conflicto y cerca de fronteras, es una amenaza real
+
+52
+00:04:59,400 --> 00:05:02,166
+Aquí es donde entra la mecánica cuántica
+
+53
+00:05:03,100 --> 00:05:09,266
+En 1924, un físico llamado Louis de Broglie
+propuso una teoría sorprendente
+
+54
+00:05:10,266 --> 00:05:17,800
+"Toda la materia tiene propiedades de onda"
+Esto se llama ondas de materia
+
+55
+00:05:18,766 --> 00:05:22,533
+La longitud de onda λ se expresa con esta fórmula
+
+56
+00:05:23,333 --> 00:05:33,366
+h es la constante de Planck, m es la masa, v es la velocidad
+Es decir, cuanto más lento se mueve un objeto, mayor es su longitud de onda
+
+57
+00:05:34,566 --> 00:05:40,466
+Así como la luz, que se pensaba era una onda,
+también tiene propiedades de partícula
+
+58
+00:05:40,466 --> 00:05:47,300
+Los átomos, que se pensaban eran partículas,
+también tienen propiedades de onda al mismo tiempo
+
+59
+00:05:47,866 --> 00:05:50,900
+¿Han visto patrones de interferencia de luz?
+
+60
+00:05:51,800 --> 00:05:57,466
+Cuando ondas de luz con la misma longitud de onda se encuentran,
+crean patrones de franjas claras y oscuras
+
+61
+00:05:58,033 --> 00:06:04,900
+Como los átomos también tienen propiedades de onda pueden hacer lo mismo,
+pero en su estado normal hay un problema
+
+62
+00:06:05,633 --> 00:06:08,666
+Los átomos calientes se mueven a velocidades aleatorias
+
+63
+00:06:09,300 --> 00:06:12,733
+Velocidades aleatorias significan longitudes de onda aleatorias
+
+64
+00:06:13,600 --> 00:06:16,400
+Esto hace que el patrón de interferencia se difumine
+
+65
+00:06:17,066 --> 00:06:19,200
+Por eso enfriamos los átomos
+
+66
+00:06:20,033 --> 00:06:23,833
+Al enfriar, el movimiento se ralentiza y la distribución de velocidades se estrecha
+
+67
+00:06:24,633 --> 00:06:25,633
+Las longitudes de onda se uniforman
+
+68
+00:06:26,633 --> 00:06:30,866
+Solo entonces podemos crear una interferencia clara
+
+69
+00:06:31,533 --> 00:06:36,100
+Pero, ¿cómo se enfrían los átomos?
+
+70
+00:06:37,033 --> 00:06:39,533
+¿Los ponemos en un congelador?
+
+71
+00:06:40,633 --> 00:06:44,633
+En realidad, usamos un método literalmente más "cool"
+
+72
+00:06:45,133 --> 00:06:47,800
+Los enfriamos usando láseres
+
+73
+00:06:48,800 --> 00:06:54,400
+Cuando un átomo absorbe un fotón, recibe su momento y es empujado
+
+74
+00:06:54,766 --> 00:07:00,633
+Si disparamos un láser en dirección opuesta al movimiento del átomo, este se desacelera
+
+75
+00:07:01,666 --> 00:07:07,833
+Usando el efecto Doppler, podemos desacelerar selectivamente solo los átomos rápidos
+
+76
+00:07:08,466 --> 00:07:13,166
+Los átomos que se acercan ven una frecuencia más alta y entran en resonancia
+
+77
+00:07:13,933 --> 00:07:18,933
+Los átomos que se alejan ven una frecuencia más baja y no resuenan
+
+78
+00:07:19,533 --> 00:07:28,466
+Con enfriamiento láser, podemos alcanzar temperaturas
+muy cercanas al cero absoluto: -273,15 grados Celsius
+
+79
+00:07:28,933 --> 00:07:32,833
+Podemos hacerlo más frío que el espacio exterior
+
+80
+00:07:33,300 --> 00:07:37,266
+Entonces, ¿qué hacemos con estos átomos enfriados?
+
+81
+00:07:37,633 --> 00:07:42,333
+Ahora pasamos del enfriamiento a otra operación con láser
+
+82
+00:07:43,133 --> 00:07:47,733
+Hacemos que los átomos enfriados interfieran
+para medir la aceleración
+
+83
+00:07:48,733 --> 00:07:54,300
+Existe un interferómetro óptico
+llamado interferómetro de Mach-Zehnder
+
+84
+00:07:54,933 --> 00:07:58,400
+La luz se divide en dos caminos mediante un espejo semitransparente
+
+85
+00:07:58,866 --> 00:08:02,900
+Luego la luz de cada camino se recombina
+
+86
+00:08:03,433 --> 00:08:07,133
+Cuando hay diferencia de camino, se forman patrones de interferencia
+
+87
+00:08:08,100 --> 00:08:10,833
+Los interferómetros atómicos funcionan con el mismo principio
+
+88
+00:08:11,333 --> 00:08:16,200
+El punto clave es que los pulsos láser pueden manipular las trayectorias atómicas
+
+89
+00:08:17,233 --> 00:08:25,400
+Aplicar pulsos láser corresponde a dividir luz con un espejo semitransparente
+o reflejarla en un espejo
+
+90
+00:08:25,966 --> 00:08:35,066
+Cuando dos láseres con frecuencias ligeramente diferentes inciden en un átomo,
+el estado interno y el momento del átomo cambian simultáneamente
+
+91
+00:08:35,666 --> 00:08:38,400
+Esto se llama transición Raman
+
+92
+00:08:39,400 --> 00:08:44,266
+Controlando la trayectoria del átomo con láseres
+
+93
+00:08:44,333 --> 00:08:47,733
+Podemos crear interferencia debido a la diferencia de camino
+
+94
+00:08:48,333 --> 00:08:52,566
+Los interferómetros atómicos usan tres pulsos láser
+
+95
+00:08:52,966 --> 00:09:02,800
+El primer pulso láser divide el átomo,
+creando una superposición del estado base |g⟩ y el estado excitado |e⟩
+
+96
+00:09:03,400 --> 00:09:06,866
+Cumple el mismo papel que un espejo semitransparente en óptica
+
+97
+00:09:08,366 --> 00:09:12,366
+El segundo pulso láser invierte las trayectorias
+
+98
+00:09:13,000 --> 00:09:17,200
+Intercambia el estado base |g⟩ y el estado excitado |e⟩
+
+99
+00:09:17,933 --> 00:09:21,333
+Corresponde a la reflexión en un espejo en óptica
+
+100
+00:09:21,866 --> 00:09:27,233
+El último pulso láser
+superpone los dos caminos para crear interferencia
+
+101
+00:09:28,000 --> 00:09:31,533
+Como el primero, actúa como espejo semitransparente
+
+102
+00:09:32,233 --> 00:09:39,966
+Así, con tres pulsos láser podemos realizar
+un interferómetro de Mach-Zehnder con átomos
+
+103
+00:09:40,533 --> 00:09:47,133
+Si hay aceleración,
+los átomos en los dos caminos experimentan historias de fuerza diferentes
+
+104
+00:09:47,800 --> 00:09:50,666
+Esta diferencia aparece como un cambio de fase
+
+105
+00:09:51,400 --> 00:09:55,200
+La diferencia de fase Δφ se puede escribir con esta fórmula
+
+106
+00:09:56,400 --> 00:10:03,066
+Esta diferencia de fase puede observarse finalmente
+como la probabilidad de estar en el estado base |g⟩
+
+107
+00:10:03,733 --> 00:10:10,400
+Usando muchos átomos y midiendo estadísticamente,
+podemos determinar la aceleración
+
+108
+00:10:11,000 --> 00:10:19,166
+Comparando con los acelerómetros MEMS convencionales,
+se ve que los interferómetros atómicos tienen precisión extremadamente alta
+
+109
+00:10:19,700 --> 00:10:29,433
+La precisión de los interferómetros atómicos es
+del orden de 10⁻⁹ a 10⁻¹² m/s²
+
+110
+00:10:29,733 --> 00:10:34,800
+Esto significa un error de solo unos 65 cm en un vuelo de 10 horas
+
+111
+00:10:35,233 --> 00:10:40,400
+Es posible el posicionamiento de alta precisión a largo plazo sin GPS
+
+112
+00:10:41,033 --> 00:10:47,733
+Los interferómetros atómicos se basan en frecuencias de transición atómica,
+que son constantes fundamentales de la naturaleza
+
+113
+00:10:48,600 --> 00:10:53,866
+La constante de Planck y la velocidad de la luz
+son iguales en todo el universo, en todo momento
+
+114
+00:10:54,233 --> 00:10:57,166
+Por eso son posibles mediciones tan precisas
+
+115
+00:10:57,866 --> 00:11:05,933
+Quizás estén pensando "En teoría podría funcionar,
+pero ¿realmente se puede poner en práctica?"
+
+116
+00:11:06,366 --> 00:11:10,533
+De hecho, las pruebas de demostración ya han tenido éxito
+
+117
+00:11:11,166 --> 00:11:21,433
+Boeing, el famoso fabricante de aviones,
+logró un vuelo de 4 horas sin GPS en 2025
+
+118
+00:11:22,100 --> 00:11:31,000
+Q-CTRL, una startup australiana,
+logró una precisión de 22 m con una avioneta Cessna
+
+119
+00:11:31,233 --> 00:11:36,533
+Y ganó el premio a los Mejores Inventos 2025 de la revista Time
+
+120
+00:11:37,100 --> 00:11:41,666
+La Marina Británica también ha tenido éxito en pruebas con submarinos
+
+121
+00:11:42,566 --> 00:11:50,533
+Aunque aún está en fase de investigación,
+está atrayendo atención mundial como tecnología de posicionamiento de próxima generación
+
+122
+00:11:51,000 --> 00:11:56,366
+Aún hay muchos desafíos como la miniaturización de dispositivos y la reducción de costos
+
+123
+00:11:57,033 --> 00:12:07,433
+Pero con los avances en láseres semiconductores y la tecnología de chips atómicos
+usada en computadoras cuánticas, cada año se acerca más a la aplicación práctica
+
+124
+00:12:10,300 --> 00:12:14,933
+La mecánica cuántica puede parecer
+un mundo misterioso y extraño
+
+125
+00:12:16,100 --> 00:12:22,933
+Pero como la navegación cuántica,
+está sirviendo como base para tecnologías que benefician nuestra vida diaria
+
+126
+00:12:24,166 --> 00:12:27,233
+Así como el GPS del smartphone se volvió algo común
+
+127
+00:12:27,766 --> 00:12:32,200
+Quizás algún día la navegación cuántica también sea algo común
+
+128
+00:12:33,266 --> 00:12:37,233
+¡Hasta el próximo video, cuídense!

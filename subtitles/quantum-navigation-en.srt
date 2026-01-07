@@ -1,0 +1,563 @@
+1
+00:00:00,233 --> 00:00:03,100
+GPS on smartphones is really convenient, isn't it?
+
+2
+00:00:03,633 --> 00:00:06,966
+I'm embarrassed to admit I have a terrible sense of direction
+
+3
+00:00:07,266 --> 00:00:14,100
+Without GPS and smartphone map apps
+I can barely get to my destination
+
+4
+00:00:14,500 --> 00:00:19,700
+But GPS relies on signals from space
+
+5
+00:00:20,266 --> 00:00:25,700
+It doesn't work when you're in a tunnel
+or on a ferry out at sea
+
+6
+00:00:26,333 --> 00:00:29,966
+And it can be disabled by malicious jamming signals
+
+7
+00:00:30,933 --> 00:00:37,066
+But is there a way to measure position with high precision without GPS?
+
+8
+00:00:37,900 --> 00:00:45,500
+Actually, a technology called quantum navigation
+using ultra-cold atoms is rapidly developing
+
+9
+00:00:46,133 --> 00:00:53,466
+In 2025, there was news that Boeing and
+the British Navy succeeded in demonstration tests
+
+10
+00:00:54,000 --> 00:00:57,833
+Today, I'll explain why cooling atoms
+allows us to determine position
+
+11
+00:00:58,533 --> 00:01:00,400
+Let's look at how it works
+
+12
+00:01:03,333 --> 00:01:10,733
+First, let's talk about the most classical method
+of knowing your position without GPS
+
+13
+00:01:11,533 --> 00:01:16,466
+Have you ever heard of the speed unit called "knots"?
+
+14
+00:01:17,633 --> 00:01:20,000
+It's used for ship speeds, right?
+
+15
+00:01:20,700 --> 00:01:25,966
+This unit actually comes from a measurement method
+invented by ancient sailors
+
+16
+00:01:26,866 --> 00:01:29,933
+They tied knots at regular intervals on a rope
+
+17
+00:01:30,433 --> 00:01:32,233
+And threw it into the sea
+
+18
+00:01:33,000 --> 00:01:37,666
+They counted how many knots passed
+while the sand in an hourglass fell
+
+19
+00:01:38,300 --> 00:01:40,166
+This told them their speed
+
+20
+00:01:40,866 --> 00:01:43,433
+It's a really clever method, isn't it?
+
+21
+00:01:43,933 --> 00:01:47,566
+Distance traveled can be calculated by multiplying speed and time
+
+22
+00:01:48,000 --> 00:01:53,366
+It's a formula you learn in middle school
+but this is the basis of inertial navigation
+
+23
+00:01:53,966 --> 00:01:57,600
+But in real movement, speed changes, right?
+
+24
+00:01:58,366 --> 00:02:00,300
+Accelerating and decelerating
+
+25
+00:02:01,133 --> 00:02:08,266
+In that case, you can plot speed versus time on a graph
+and find the distance traveled from the area under the curve
+
+26
+00:02:08,766 --> 00:02:11,800
+This is what we call integration in mathematics
+
+27
+00:02:12,266 --> 00:02:21,000
+But modern aircraft and ships commonly measure acceleration
+rather than velocity to determine position
+
+28
+00:02:21,833 --> 00:02:26,033
+Why measure acceleration instead of velocity?
+
+29
+00:02:26,900 --> 00:02:32,766
+When you're on an airplane
+you feel takeoff and landing with your body, right?
+
+30
+00:02:33,433 --> 00:02:40,200
+But during stable flight, you can't even tell if you're moving
+without looking out the window
+
+31
+00:02:40,700 --> 00:02:47,866
+In other words, it's difficult to directly measure velocity
+inside a vehicle moving at constant speed
+
+32
+00:02:48,433 --> 00:02:51,466
+Measuring velocity requires an external reference
+
+33
+00:02:52,333 --> 00:02:56,700
+But acceleration can be measured without an external reference
+
+34
+00:02:57,266 --> 00:03:04,400
+That's why inertial navigation measures acceleration
+and integrates it twice to find position
+
+35
+00:03:05,300 --> 00:03:12,200
+It's a self-contained system that can work on its own
+without external information
+
+36
+00:03:12,833 --> 00:03:15,800
+But there's a big problem here
+
+37
+00:03:16,966 --> 00:03:24,233
+If there's a slight error in the accelerometer
+that error accumulates with each integration
+
+38
+00:03:24,933 --> 00:03:34,833
+Moreover, since distance is calculated by integrating
+acceleration twice, the error grows proportionally to the square of time
+
+39
+00:03:35,466 --> 00:03:45,266
+Even with today's high-precision aircraft accelerometers
+the error reaches about 6.5 km after 10 hours
+
+40
+00:03:45,900 --> 00:03:49,533
+This makes it unusable for long-distance navigation
+
+41
+00:03:50,400 --> 00:03:57,200
+That's why we currently use GPS corrections periodically
+to reset the error
+
+42
+00:03:57,800 --> 00:04:02,000
+Aircraft, ships, smartphones - they all use this method
+
+43
+00:04:03,066 --> 00:04:11,333
+So current positioning technology requires
+external information like GPS
+
+44
+00:04:11,866 --> 00:04:14,966
+But GPS has weaknesses too
+
+45
+00:04:15,066 --> 00:04:21,900
+Since it uses radio waves from satellites
+naturally it can't work where signals can't reach
+
+46
+00:04:22,800 --> 00:04:24,133
+For example, underwater
+
+47
+00:04:25,066 --> 00:04:29,900
+GPS cannot measure the position of submarines or underwater drones
+
+48
+00:04:30,766 --> 00:04:36,833
+It also doesn't work in tunnels, underground spaces, or urban canyons
+
+49
+00:04:37,500 --> 00:04:41,266
+What's even scarier is malicious attacks
+
+50
+00:04:42,033 --> 00:04:52,633
+Spoofing sends fake GPS signals to cause position errors
+and jamming disables GPS with interference signals
+
+51
+00:04:52,800 --> 00:04:58,333
+These are real threats in conflict zones and near borders
+
+52
+00:04:59,400 --> 00:05:02,166
+This is where quantum mechanics comes in
+
+53
+00:05:03,100 --> 00:05:09,266
+In 1924, a physicist named Louis de Broglie
+proposed a remarkable theory
+
+54
+00:05:10,266 --> 00:05:17,800
+"All matter has wave-like properties"
+This is called matter waves
+
+55
+00:05:18,766 --> 00:05:22,533
+The wavelength λ can be expressed by this formula
+
+56
+00:05:23,333 --> 00:05:33,366
+h is Planck's constant, m is mass, v is velocity
+In other words, slower-moving objects have longer wavelengths
+
+57
+00:05:34,566 --> 00:05:40,466
+Just as light, which was thought to be a wave
+also has particle-like properties
+
+58
+00:05:40,466 --> 00:05:47,300
+Atoms, which were thought to be particles
+also have wave-like properties at the same time
+
+59
+00:05:47,866 --> 00:05:50,900
+Have you ever seen light interference patterns?
+
+60
+00:05:51,800 --> 00:05:57,466
+When light waves with matching wavelengths collide
+they create bright and dark stripe patterns
+
+61
+00:05:58,033 --> 00:06:04,900
+Since atoms also have wave properties, they can do the same thing
+but there's a problem as they are
+
+62
+00:06:05,633 --> 00:06:08,666
+Hot atoms move at random velocities
+
+63
+00:06:09,300 --> 00:06:12,733
+Random velocities mean random wavelengths
+
+64
+00:06:13,600 --> 00:06:16,400
+This causes the interference pattern to blur
+
+65
+00:06:17,066 --> 00:06:19,200
+That's why we cool the atoms
+
+66
+00:06:20,033 --> 00:06:23,833
+Cooling slows them down and narrows the velocity distribution
+
+67
+00:06:24,633 --> 00:06:25,633
+The wavelengths align
+
+68
+00:06:26,633 --> 00:06:30,866
+Only then can we create clean interference
+
+69
+00:06:31,533 --> 00:06:36,100
+But how do you cool atoms?
+
+70
+00:06:37,033 --> 00:06:39,533
+Do you put them in a freezer?
+
+71
+00:06:40,633 --> 00:06:44,633
+Actually, we use a literally cooler method
+
+72
+00:06:45,133 --> 00:06:47,800
+We cool them using lasers
+
+73
+00:06:48,800 --> 00:06:54,400
+When an atom absorbs a photon, it receives the photon's momentum and gets pushed
+
+74
+00:06:54,766 --> 00:07:00,633
+If we shine a laser opposite to the atom's direction of travel, the atom slows down
+
+75
+00:07:01,666 --> 00:07:07,833
+We can also selectively slow only fast atoms using the Doppler effect
+
+76
+00:07:08,466 --> 00:07:13,166
+Approaching atoms see a higher frequency and resonate
+
+77
+00:07:13,933 --> 00:07:18,933
+Receding atoms see a lower frequency and don't resonate
+
+78
+00:07:19,533 --> 00:07:28,466
+With laser cooling, we can reach temperatures very close to absolute zero
+-273.15 degrees Celsius
+
+79
+00:07:28,933 --> 00:07:32,833
+We can make it colder than outer space
+
+80
+00:07:33,300 --> 00:07:37,266
+So what do we do with these cooled atoms?
+
+81
+00:07:37,633 --> 00:07:42,333
+Now we move from cooling to a different laser operation
+
+82
+00:07:43,133 --> 00:07:47,733
+We make the cooled atoms interfere
+to measure acceleration
+
+83
+00:07:48,733 --> 00:07:54,300
+There's a light-based interferometer
+called the Mach-Zehnder interferometer
+
+84
+00:07:54,933 --> 00:07:58,400
+Light is split into two paths by a half-mirror
+
+85
+00:07:58,866 --> 00:08:02,900
+The light from each path is then recombined
+
+86
+00:08:03,433 --> 00:08:07,133
+When there's a path difference, interference patterns form
+
+87
+00:08:08,100 --> 00:08:10,833
+Atom interferometers work on the same principle
+
+88
+00:08:11,333 --> 00:08:16,200
+The key point is that laser pulses can manipulate atomic paths
+
+89
+00:08:17,233 --> 00:08:25,400
+Applying laser pulses corresponds to splitting light at a half-mirror
+or reflecting off a mirror
+
+90
+00:08:25,966 --> 00:08:35,066
+When two lasers with slightly different frequencies hit an atom
+the atom's internal state and momentum change simultaneously
+
+91
+00:08:35,666 --> 00:08:38,400
+This is called Raman transition
+
+92
+00:08:39,400 --> 00:08:44,266
+By controlling the atomic path with lasers
+
+93
+00:08:44,333 --> 00:08:47,733
+We can create interference due to path differences
+
+94
+00:08:48,333 --> 00:08:52,566
+Atom interferometers use three laser pulses
+
+95
+00:08:52,966 --> 00:09:02,800
+The first laser pulse splits the atom
+creating a superposition of ground state |g⟩ and excited state |e⟩
+
+96
+00:09:03,400 --> 00:09:06,866
+It serves the same role as a half-mirror in optical systems
+
+97
+00:09:08,366 --> 00:09:12,366
+The second laser pulse reverses the paths
+
+98
+00:09:13,000 --> 00:09:17,200
+It swaps the ground state |g⟩ and excited state |e⟩
+
+99
+00:09:17,933 --> 00:09:21,333
+This corresponds to mirror reflection in optical systems
+
+100
+00:09:21,866 --> 00:09:27,233
+The final laser pulse
+superimposes the two paths to create interference
+
+101
+00:09:28,000 --> 00:09:31,533
+It serves as a half-mirror, just like the first pulse
+
+102
+00:09:32,233 --> 00:09:39,966
+In this way, three laser pulses can realize
+a Mach-Zehnder interferometer with atoms
+
+103
+00:09:40,533 --> 00:09:47,133
+If there's acceleration
+the two paths experience different force histories
+
+104
+00:09:47,800 --> 00:09:50,666
+This difference appears as a phase shift
+
+105
+00:09:51,400 --> 00:09:55,200
+The phase difference Δφ can be written as this formula
+
+106
+00:09:56,400 --> 00:10:03,066
+This phase difference can ultimately be observed
+as the probability of being in ground state |g⟩
+
+107
+00:10:03,733 --> 00:10:10,400
+By using many atoms and measuring statistically
+we can determine the acceleration
+
+108
+00:10:11,000 --> 00:10:19,166
+Comparing with conventional MEMS accelerometers
+shows that atom interferometers have extremely high precision
+
+109
+00:10:19,700 --> 00:10:29,433
+The precision of atom interferometers is around
+10⁻⁹ to 10⁻¹² m/s²
+
+110
+00:10:29,733 --> 00:10:34,800
+This means an error of only about 65 cm for a 10-hour flight
+
+111
+00:10:35,233 --> 00:10:40,400
+Long-duration high-precision positioning is possible without GPS
+
+112
+00:10:41,033 --> 00:10:47,733
+Atom interferometers are based on atomic transition frequencies
+which are fundamental constants of nature
+
+113
+00:10:48,600 --> 00:10:53,866
+Planck's constant and the speed of light
+are the same everywhere in the universe, at all times
+
+114
+00:10:54,233 --> 00:10:57,166
+That's why such precise measurements are possible
+
+115
+00:10:57,866 --> 00:11:05,933
+You might be thinking "It might work in theory
+but can it really be put into practical use?"
+
+116
+00:11:06,366 --> 00:11:10,533
+Actually, demonstration tests have already succeeded
+
+117
+00:11:11,166 --> 00:11:21,433
+Boeing, the famous aircraft manufacturer
+achieved a 4-hour GPS-free flight in 2025
+
+118
+00:11:22,100 --> 00:11:31,000
+Q-CTRL, an Australian startup company
+achieved 22m precision with a Cessna aircraft
+
+119
+00:11:31,233 --> 00:11:36,533
+They won Time magazine's 2025 Best Inventions award
+
+120
+00:11:37,100 --> 00:11:41,666
+The British Navy has also succeeded in submarine tests
+
+121
+00:11:42,566 --> 00:11:50,533
+While still in the research stage
+it's attracting worldwide attention as next-generation positioning technology
+
+122
+00:11:51,000 --> 00:11:56,366
+There are still many challenges like device miniaturization and cost reduction
+
+123
+00:11:57,033 --> 00:12:07,433
+But advances in semiconductor lasers and atom chip technology
+used in quantum computers are bringing it closer to practical use each year
+
+124
+00:12:10,300 --> 00:12:14,933
+Quantum mechanics might seem like
+a mysterious and strange world
+
+125
+00:12:16,100 --> 00:12:22,933
+But like quantum navigation
+it's working as the foundation for technologies that benefit our daily lives
+
+126
+00:12:24,166 --> 00:12:27,233
+Just as smartphone GPS became commonplace
+
+127
+00:12:27,766 --> 00:12:32,200
+Quantum navigation might become commonplace someday too
+
+128
+00:12:33,266 --> 00:12:37,233
+Until next time, take care!

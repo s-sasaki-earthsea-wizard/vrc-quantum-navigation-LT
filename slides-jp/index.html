@@ -180,21 +180,26 @@ $$\delta x \sim \frac{1}{2} \delta a \cdot t^2$$
 
 * 水中（潜水艦、水中ドローン）
 * トンネル・地下空間
-* 都市部のビル谷間
 
 </div>
 
-<br>
+<img src="assets/images/ROV_with_plankton_nets.png" width="600px">
+
+---
+
+### GNSSへの脅威
 
 <div class="simple-box">
 
-**GNSSへの悪意のある攻撃**
-
-* **スプーフィング**: 偽のGPS信号で位置を誤認させる
-* **ジャミング**: 妨害電波でGPS受信を阻害
+* **GNSSへの悪意のある攻撃**
+  * **スプーフィング**: 偽のGPS信号で位置を誤認
+  * **ジャミング**: 妨害電波でGPS受信を阻害
 * 軍事・重要インフラでは深刻な脅威
 
 </div>
+
+<img src="assets/images/gps-spoofing-01.png" width="500px">
+<div class="caption">Cited: https://us.norton.com/blog/emerging-threats/gps-spoofing</div>
 
 ---
 
@@ -211,6 +216,8 @@ $$\delta x \sim \frac{1}{2} \delta a \cdot t^2$$
 * 波の干渉を使って加速度を測る → 波長が揃っていないとダメ
 
 </div>
+
+<img src="assets/images/random-speed-of-molecules.png" width="800px">
 
 ---
 
@@ -240,19 +247,13 @@ $$\lambda_{\text{dB}} = \frac{h}{mv}$$
 
 <div class="simple-box">
 
-* 熱い原子：様々な速度でバラバラに動く（Maxwell-Boltzmann分布）
+* 熱い原子：様々な速度でバラバラに動く
 * 冷たい原子：速度分布が狭くなり、波長が揃う
 * 熱的ド・ブロイ波長: $\lambda_{\text{th}} \sim \frac{h}{\sqrt{m k_B T}}$
 
 </div>
 
-<br>
-
-<div class="highlight-box">
-
-温度 $T$ が低いほど波長が長くなり、量子効果が顕著に
-
-</div>
+<img src="assets/images/MB-distribution.png" width="600px">
 
 ---
 
@@ -272,15 +273,21 @@ $$\lambda_{\text{dB}} = \frac{h}{mv}$$
 
 ### レーザー冷却の原理
 
-<div class="two-column">
-<div class="column-left">
+<div class="simple-box">
 
 * 原子に**レーザー光**を当てて減速
 * 光子を吸収すると運動量を受け取る
 * 原子の進行方向と逆向きに照射 → 減速
 
 </div>
-<div class="column-right">
+
+<img src="assets/images/laser-cooling.png" width="600px">
+
+---
+
+### ドップラー冷却
+
+<div class="simple-box">
 
 * ドップラー効果を利用
   * 近づく原子は青方偏移 → 共鳴
@@ -288,21 +295,6 @@ $$\lambda_{\text{dB}} = \frac{h}{mv}$$
 * 赤方偏移したレーザーで「速い原子だけ」減速
 
 </div>
-</div>
-
----
-
-### レーザー冷却の実際
-
-<div class="simple-box">
-
-* **⁸⁷Rb（ルビジウム87）** が標準的な原子種
-  * D2線（780 nm）で冷却
-  * 反跳温度: 約360 nK
-* **磁気光学トラップ（MOT）** で捕獲・冷却
-  * 6方向からレーザーを照射
-  * 到達温度: 数μK〜数十μK
-
 </div>
 
 ---
@@ -325,6 +317,19 @@ $$\lambda_{\text{dB}} = \frac{h}{mv}$$
 </table>
 
 </div>
+
+---
+
+### 光学的マッハ-ツェンダー干渉計
+
+<div class="simple-box">
+
+* 光を2つの経路に分け、干渉させる
+* 経路差に応じて干渉縞が変化
+
+</div>
+
+<img src="assets/images/optical-mach-zender.png" width="800px">
 
 ---
 
@@ -382,13 +387,13 @@ $$|g\rangle \leftrightarrow |e\rangle$$
 
 <div class="highlight-box">
 
-$$\text{π/2} \xrightarrow{T} \text{π} \xrightarrow{T} \text{π/2}$$
-
 * 時刻0: π/2パルスで**分割**
 * 時刻T: πパルスで**反転**
 * 時刻2T: π/2パルスで**再結合**
 
 </div>
+
+<img src="assets/images/atomic-interferometer.png" width="600px">
 
 ---
 
@@ -419,13 +424,15 @@ $$\Delta\phi = k_{\text{eff}} \cdot a \cdot T^2$$
 <div class="simple-box">
 
 * 最終状態の占有確率として位相差が現れる
+* $P_g$ から加速度 $a$ を逆算
 
 $$P_g = \cos^2\left(\frac{\Delta\phi}{2}\right)$$
 
-* 10⁶〜10⁹個の原子で統計的に観測
-* $P_g$ から加速度 $a$ を逆算
 
 </div>
+
+<img src="assets/images/Atom-Interferometer-Interference-Pattern.jpg" width="250px">
+<div class="caption">DOI: https://doi.org/10.25835/0062691</div>
 
 ---
 

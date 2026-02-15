@@ -1,0 +1,355 @@
+1
+00:00:00,233 --> 00:00:03,401
+GPS no celular ajuda.
+
+2
+00:00:03,501 --> 00:00:05,637
+Sou ruim de direção.
+
+3
+00:00:05,737 --> 00:00:13,825
+Sem o GPS e um app de mapas, eu mal consigo chegar a qualquer lugar sozinho.
+
+4
+00:00:13,925 --> 00:00:18,317
+Mas o GPS depende de sinais do espaço.
+
+5
+00:00:18,417 --> 00:00:23,217
+Em túneis ou balsas no mar, ele não funciona.
+
+6
+00:00:23,317 --> 00:00:28,357
+Até interferências maliciosas podem derrubar o sinal.
+
+7
+00:00:28,457 --> 00:00:35,585
+Mas será que existe um jeito de medir a posição com ultraprecisão sem GPS?
+
+8
+00:00:35,685 --> 00:00:43,245
+A navegação quântica, com átomos ultrafrios, está avançando rápido.
+
+9
+00:00:43,345 --> 00:00:52,249
+Em 2025, Boeing e a Marinha Britânica tiveram sucesso em testes práticos.
+
+10
+00:00:52,349 --> 00:00:59,981
+Explicarei por que resfriar átomos revela nossa posição e como o sistema funciona.
+
+11
+00:01:00,081 --> 00:01:08,361
+Primeiro, vamos falar do método mais clássico de se localizar sem usar o GPS.
+
+12
+00:01:11,533 --> 00:01:19,741
+Já ouviu falar de 'nós' como unidade de velocidade? É usado muito em navios.
+
+13
+00:01:19,841 --> 00:01:25,265
+Essa unidade vem de um método que os antigos marinheiros criaram.
+
+14
+00:01:25,365 --> 00:01:31,725
+Eles davam nós em uma corda a intervalos fixos e a jogavam no mar.
+
+15
+00:01:33,000 --> 00:01:42,648
+Contavam quantos nós passavam enquanto a areia da ampulheta caía. Um método genial de saber a velocidade.
+
+16
+00:01:42,748 --> 00:01:47,572
+A distância é a velocidade multiplicada pelo tempo.
+
+17
+00:01:47,672 --> 00:01:52,688
+Aprendemos na escola. É a base desta navegação.
+
+18
+00:01:52,788 --> 00:01:59,124
+Realmente, a velocidade varia. Aceleramos e paramos.
+
+19
+00:01:59,224 --> 00:02:08,056
+Nesse caso, calculamos a área sob o gráfico de velocidade e tempo para achar a distância.
+
+20
+00:02:08,156 --> 00:02:10,436
+Isso se chama integral.
+
+21
+00:02:10,536 --> 00:02:19,080
+Aviões e navios medem a aceleração, não a velocidade, para achar a posição.
+
+22
+00:02:19,180 --> 00:02:23,812
+Mas por que medir a aceleração em vez da velocidade?
+
+23
+00:02:23,912 --> 00:02:31,712
+Num avião, você sente no corpo o momento da decolagem ou do pouso, certo?
+
+24
+00:02:31,812 --> 00:02:39,228
+No voo estável, sem olhar pela janela, nem se sente o movimento.
+
+25
+00:02:39,328 --> 00:02:45,256
+É difícil medir a velocidade em um veículo em movimento constante.
+
+26
+00:02:45,356 --> 00:02:49,652
+Velocidade precisa de uma referência externa.
+
+27
+00:02:49,752 --> 00:02:55,272
+Já a aceleração pode ser medida sem referências externas.
+
+28
+00:02:55,372 --> 00:03:03,388
+A navegação inercial mede a aceleração e a integra duas vezes para achar a posição.
+
+29
+00:03:03,488 --> 00:03:10,664
+É um sistema autônomo, que funciona sozinho sem informações de fora.
+
+30
+00:03:10,764 --> 00:03:14,172
+Só que aqui temos um grande problema.
+
+31
+00:03:14,272 --> 00:03:22,144
+Se houver um erro mínimo no acelerômetro, esse erro se acumula a cada integração.
+
+32
+00:03:24,933 --> 00:03:33,645
+Como a distância usa a integral dupla da aceleração, o erro cresce com o quadrado do tempo.
+
+33
+00:03:35,466 --> 00:03:45,210
+Mesmo os acelerômetros de ponta em aviões podem desviar 6,5 km após 10 horas de voo.
+
+34
+00:03:45,310 --> 00:03:48,934
+Isso impede viagens longas sozinho.
+
+35
+00:03:49,034 --> 00:03:54,794
+Por isso, o GPS corrige esse erro periodicamente.
+
+36
+00:03:54,894 --> 00:04:01,206
+Aviões, navios e celulares... todos usam esse método.
+
+37
+00:04:01,306 --> 00:04:09,802
+A tecnologia de posicionamento atual depende totalmente de dados externos como o GPS.
+
+38
+00:04:09,902 --> 00:04:13,526
+Mas o GPS tem pontos fracos.
+
+39
+00:04:13,626 --> 00:04:20,874
+Como usa ondas de satélites, ele não funciona onde o sinal não chega.
+
+40
+00:04:20,974 --> 00:04:29,446
+Debaixo d'água, por exemplo, submarinos e drones não podem usar GPS.
+
+41
+00:04:29,546 --> 00:04:36,818
+Em túneis, subsolos ou entre prédios altos, ele também falha.
+
+42
+00:04:36,918 --> 00:04:40,998
+E pior ainda são os ataques deliberados.
+
+43
+00:04:42,033 --> 00:04:52,569
+Existem o 'spoofing', que envia sinais falsos, e o 'jamming', que bloqueia o sinal completamente.
+
+44
+00:04:52,669 --> 00:04:57,109
+Isso já ameaça zonas de conflito e fronteiras.
+
+45
+00:04:57,209 --> 00:05:00,785
+É aqui que entra a mecânica quântica.
+
+46
+00:05:00,885 --> 00:05:09,813
+Em 1924, o físico Louis de Broglie propôs uma teoria surpreendente.
+
+47
+00:05:10,266 --> 00:05:17,586
+Que toda matéria tem propriedades de onda. Chamamos isso de ondas de matéria.
+
+48
+00:05:17,686 --> 00:05:22,222
+O comprimento de onda segue esta fórmula básica.
+
+49
+00:05:22,322 --> 00:05:33,026
+Onde h é a constante de Planck, m a massa e v a velocidade. Objeto mais lento, onda maior.
+
+50
+00:05:34,566 --> 00:05:45,414
+Assim como a luz se comporta como partícula, os átomos, que achávamos ser só partículas, agem como ondas.
+
+51
+00:05:47,866 --> 00:05:56,026
+Já viu franjas de interferência da luz? É o padrão que surge quando ondas alinhadas colidem.
+
+52
+00:05:58,033 --> 00:06:02,857
+Átomos podem fazer o mesmo, mas há um porém.
+
+53
+00:06:05,633 --> 00:06:12,041
+Átomos quentes se movem em velocidades e comprimentos de onda variados.
+
+54
+00:06:12,141 --> 00:06:16,173
+Isso acaba borrando o padrão de interferência.
+
+55
+00:06:17,066 --> 00:06:25,418
+Por isso resfriamos os átomos. O frio reduz a velocidade e alinha os comprimentos de onda.
+
+56
+00:06:25,518 --> 00:06:30,534
+Só assim conseguimos uma interferência limpa e precisa.
+
+57
+00:06:31,533 --> 00:06:37,965
+Mas como resfriar um átomo? Não é simplesmente colocando num freezer.
+
+58
+00:06:40,633 --> 00:06:45,505
+Usamos um método muito mais legal: lasers.
+
+59
+00:06:45,605 --> 00:06:53,933
+Quando um átomo absorve um fóton, ele recebe um 'empurrão' de movimento.
+
+60
+00:06:54,033 --> 00:06:59,481
+Ao disparar o laser no átomo, nós o desaceleramos.
+
+61
+00:06:59,581 --> 00:07:06,949
+Com o efeito Doppler, afetamos apenas os átomos que estão vindo rápido.
+
+62
+00:07:08,466 --> 00:07:17,154
+Os que se aproximam entram em ressonância; os que se afastam, não. É muito seletivo.
+
+63
+00:07:19,533 --> 00:07:31,773
+Isso permite chegar perto do zero absoluto, -273 graus. Fica mais frio que o próprio espaço sideral.
+
+64
+00:07:33,300 --> 00:07:39,948
+E o que fazemos com eles? Vamos manipulá-los para medir a aceleração.
+
+65
+00:07:43,133 --> 00:07:51,581
+Existe o interferômetro Mach-Zehnder, que divide a luz em dois caminhos usando espelhos.
+
+66
+00:07:54,933 --> 00:08:02,925
+Ao recombinar a luz, qualquer diferença no trajeto cria um padrão de interferência.
+
+67
+00:08:08,100 --> 00:08:15,828
+O princípio com átomos é o mesmo, mas usamos pulsos de laser para guiá-los.
+
+68
+00:08:17,233 --> 00:08:23,521
+O laser faz o papel do divisor e do espelho para as ondas de matéria.
+
+69
+00:08:25,966 --> 00:08:35,542
+Ao usar dois lasers, alteramos o estado do átomo e seu movimento. Isso é a transição Raman.
+
+70
+00:08:39,400 --> 00:08:45,808
+Controlando o caminho do átomo, criamos a interferência desejada.
+
+71
+00:08:48,333 --> 00:08:58,749
+Usamos três pulsos: o primeiro divide o átomo em dois estados sobrepostos, como o divisor de luz.
+
+72
+00:09:08,366 --> 00:09:16,574
+O segundo inverte os caminhos, trocando os estados, agindo como um espelho.
+
+73
+00:09:21,866 --> 00:09:27,962
+O último pulso sobrepõe os caminhos para gerar a interferência final.
+
+74
+00:09:32,233 --> 00:09:40,777
+Se houver aceleração, a força sentida pelos átomos em cada caminho será diferente.
+
+75
+00:09:40,877 --> 00:09:48,869
+Essa diferença aparece como um deslocamento de fase, expresso nesta fórmula.
+
+76
+00:09:56,400 --> 00:10:05,592
+Medindo estatisticamente o estado final de muitos átomos, descobrimos a aceleração exata.
+
+77
+00:10:05,692 --> 00:10:13,972
+Comparado aos sensores comuns, a precisão do interferômetro atômico é absurda.
+
+78
+00:10:19,700 --> 00:10:27,548
+Sua precisão é de 10⁻⁹ a 10⁻¹² m/s².
+
+79
+00:10:27,648 --> 00:10:39,000
+Num voo de 10 horas, o erro seria de apenas 65 cm. É navegação perfeita sem GPS.
+
+80
+00:10:41,033 --> 00:10:51,161
+Como baseamos tudo em constantes universais, como a de Planck, a medição é ultraestável em qualquer lugar.
+
+81
+00:10:57,866 --> 00:11:05,882
+Pode parecer só teoria, mas já existem experimentos de sucesso no mundo real.
+
+82
+00:11:05,982 --> 00:11:19,398
+A Boeing voou 4 horas sem GPS em 2025. E a startup Q-CTRL atingiu precisão de 22 metros em um Cessna.
+
+83
+00:11:22,100 --> 00:11:31,508
+Eles até ganharam um prêmio da Time. Além disso, a Marinha Britânica já testou em submarinos.
+
+84
+00:11:31,608 --> 00:11:39,984
+Ainda estamos na fase de pesquisa, mas o mundo todo está de olho nessa tecnologia.
+
+85
+00:11:40,084 --> 00:11:47,140
+Ainda há desafios, como reduzir o custo e o tamanho dos aparelhos.
+
+86
+00:11:57,033 --> 00:12:06,345
+Mas com os avanços em lasers e chips atômicos, a aplicação prática está cada vez mais perto.
+
+87
+00:12:10,300 --> 00:12:20,428
+A mecânica quântica pode parecer abstrata, mas ela é a base de tecnologias que vão mudar nossas vidas.
+
+88
+00:12:24,166 --> 00:12:32,134
+Um dia, a navegação quântica será tão comum quanto o GPS no seu bolso.
+
+89
+00:12:32,234 --> 00:12:37,802
+É isso. Vejo vocês no próximo vídeo. Até logo!
